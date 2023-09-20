@@ -1,0 +1,25 @@
+//#include <iostream>  // # 後面會接上前置處理器的指令
+#include <stdio.h>        // include將後面的檔案"複製"目前的程式碼中  
+int main()   // main是主程式固定的名稱,以左右小括弧結尾的名稱就是 主/副程式 或函數
+{// int 是指變數型態，在這裡是指main()執行結束後傳回的資料型態為整數
+    int var1, var2, sum,diff,mul,div,modul;
+    var1 = 9;
+    var2 = 6;
+    sum = var1 + var2;
+    diff = var1 - var2;
+    mul = var1 * var2;
+    div = var1 / var2;
+    modul = var1 % var2;
+    
+    printf("\\第一個C程式\\t\t\t\t\t\t");   //""用來包住字串常數 ;表示結束符號 \n表示換行符號
+    printf("\n%d 與 %d 的和是=%d",var1,var2, sum);                          //std::cout << "Hello World!\n";
+    printf("\n%d 與 %d 的差是=%d", var1, var2, diff);
+    printf("\n%d 與 %d 的積是=%d", var1, var2, mul);
+    printf("\n%d 與 %d 的商是=%d", var1, var2, div);
+    printf("\n%d 與 %d 的餘數是=%d", var1, var2, modul);
+    {
+
+
+    }
+    //return 1;
+}
