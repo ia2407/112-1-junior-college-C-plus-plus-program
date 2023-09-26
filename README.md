@@ -10,11 +10,12 @@
 git clone https://github.com/ia2407/112-1-junior-college-C-plus-plus-program.git 學號
 ```
 <br>
+
 移動到學號資料夾
 ```
 cd 學號
 ```
-<br>
+<br> 
 
 啟動 git 功能
 ```
