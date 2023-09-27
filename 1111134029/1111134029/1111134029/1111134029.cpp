@@ -1,25 +1,27 @@
 ﻿// 1111134029.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
 //
 
-#include <iostream>
+#include <stdio.h>
 
 int main()
 {
-	int a, b, c, d, e,f, sum;
-   a = 9;
-   b = 6;
-   c = a + b;
-   d = a - b;
-   e = a * b;
-   f = a /b;
-   sum= a % b;
-   printf("%d和%d的和是%d\n", a, b, c);
-   printf("%d減%d的差是%d\n", a, b, d);
-   printf("%d乘%d的積是%d\n", a, b, e);
-   printf("%d除%d的商是%d\n", a, b, f);
-   printf("%d除%d的餘數是%d\n", a, b, sum);
-}
+    printf("輸入成績");
+    int score;
+    scanf_s("%d", &score);
+    if (score >= 90)
+        printf("表現優秀!得A");
+    else if (score >= 80)
+        printf("表現不錯!得B");
+    else if (score >= 70)
+        printf("恭喜通過!得C");
+    else if (score >= 60)
+        printf("好險有過!得D");
+    else printf("請於8/31前報名暑修!");
+       
+    
 
+    }
+        
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
 // 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
 
