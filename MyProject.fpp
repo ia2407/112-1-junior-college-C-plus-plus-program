@@ -1,9 +1,9 @@
-14       	 <--SHAPES
+15       	 <--SHAPES
 17       	 <--LINES
 id1
 2       	 <--TYPE
-94       	 <--LEFT
-68       	 <--TOP
+419       	 <--LEFT
+88       	 <--TOP
 70       	 <--WIDTH
 30       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
@@ -16,39 +16,9 @@ START
 
 
 id2
-91       	 <--TYPE
-505       	 <--LEFT
-60       	 <--TOP
-182       	 <--WIDTH
-40       	 <--HEIGHT
-16777215       	 <--BACKCOLOR
-0       	 <--BORDERCOLOR
-0       	 <--BORDERCOLOR
--reserved 1-
--reserved 2-
-INPUT
-請輸入你的成績
-score
-
-id3
-2       	 <--TYPE
-1404       	 <--LEFT
-766       	 <--TOP
-70       	 <--WIDTH
-30       	 <--HEIGHT
-16777215       	 <--BACKCOLOR
-0       	 <--BORDERCOLOR
-0       	 <--BORDERCOLOR
--reserved 1-
--reserved 2-
-STOP
-
-
-
-id4
 0       	 <--TYPE
-289       	 <--LEFT
-67       	 <--TOP
+381       	 <--LEFT
+168       	 <--TOP
 75       	 <--WIDTH
 30       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
@@ -60,10 +30,25 @@ DEFINITION
 score
 0
 
-id5
+id3
+91       	 <--TYPE
+336       	 <--LEFT
+264       	 <--TOP
+166       	 <--WIDTH
+40       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+INPUT
+輸入學生成績
+score
+
+id4
 92       	 <--TYPE
-535       	 <--LEFT
-191       	 <--TOP
+277       	 <--LEFT
+400       	 <--TOP
 112       	 <--WIDTH
 50       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
@@ -75,11 +60,11 @@ IF_GREATER_EQUAL
 score
 90
 
-id6
+id5
 91       	 <--TYPE
-718       	 <--LEFT
-191       	 <--TOP
-175       	 <--WIDTH
+550       	 <--LEFT
+408       	 <--TOP
+163       	 <--WIDTH
 40       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
 0       	 <--BORDERCOLOR
@@ -87,13 +72,13 @@ id6
 -reserved 1-
 -reserved 2-
 OUTPUT
-表現優異，得A
+表現優異 得A
 score
 
-id7
+id6
 92       	 <--TYPE
-526       	 <--LEFT
-312       	 <--TOP
+259       	 <--LEFT
+527       	 <--TOP
 112       	 <--WIDTH
 50       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
@@ -105,11 +90,11 @@ IF_GREATER_EQUAL
 score
 80
 
-id8
+id7
 91       	 <--TYPE
-748       	 <--LEFT
-315       	 <--TOP
-175       	 <--WIDTH
+566       	 <--LEFT
+532       	 <--TOP
+163       	 <--WIDTH
 40       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
 0       	 <--BORDERCOLOR
@@ -117,13 +102,13 @@ id8
 -reserved 1-
 -reserved 2-
 OUTPUT
-表現不錯，得B
+表現不錯 得B
 score
 
-id9
+id8
 92       	 <--TYPE
-527       	 <--LEFT
-453       	 <--TOP
+256       	 <--LEFT
+642       	 <--TOP
 112       	 <--WIDTH
 50       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
@@ -135,10 +120,25 @@ IF_GREATER_EQUAL
 score
 70
 
+id9
+91       	 <--TYPE
+564       	 <--LEFT
+642       	 <--TOP
+161       	 <--WIDTH
+40       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+OUTPUT
+恭喜有過 得c
+score
+
 id10
 92       	 <--TYPE
-519       	 <--LEFT
-621       	 <--TOP
+255       	 <--LEFT
+762       	 <--TOP
 112       	 <--WIDTH
 50       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
@@ -152,9 +152,9 @@ score
 
 id11
 91       	 <--TYPE
-740       	 <--LEFT
-441       	 <--TOP
-175       	 <--WIDTH
+556       	 <--LEFT
+757       	 <--TOP
+161       	 <--WIDTH
 40       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
 0       	 <--BORDERCOLOR
@@ -162,29 +162,59 @@ id11
 -reserved 1-
 -reserved 2-
 OUTPUT
-恭喜通過，得C
+下次努力 得d
 score
 
 id12
-91       	 <--TYPE
-738       	 <--LEFT
-625       	 <--TOP
-175       	 <--WIDTH
-40       	 <--HEIGHT
+2       	 <--TYPE
+1046       	 <--LEFT
+762       	 <--TOP
+70       	 <--WIDTH
+30       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
 0       	 <--BORDERCOLOR
 0       	 <--BORDERCOLOR
 -reserved 1-
 -reserved 2-
-OUTPUT
-好險有過，得D
-score
+STOP
+
+
 
 id13
+2       	 <--TYPE
+-540       	 <--LEFT
+348       	 <--TOP
+70       	 <--WIDTH
+30       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+STOP
+
+
+
+id14
+92       	 <--TYPE
+264       	 <--LEFT
+861       	 <--TOP
+112       	 <--WIDTH
+50       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+IF_LESS_EQUAL
+score
+60
+
+id15
 91       	 <--TYPE
-753       	 <--LEFT
-802       	 <--TOP
-144       	 <--WIDTH
+1029       	 <--LEFT
+867       	 <--TOP
+118       	 <--WIDTH
 40       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
 0       	 <--BORDERCOLOR
@@ -192,74 +222,59 @@ id13
 -reserved 1-
 -reserved 2-
 OUTPUT
-重修"就"好
+沒救掰
 score
-
-id14
-3       	 <--TYPE
-1357       	 <--LEFT
-575       	 <--TOP
-10       	 <--WIDTH
-10       	 <--HEIGHT
-16777215       	 <--BACKCOLOR
-0       	 <--BORDERCOLOR
-0       	 <--BORDERCOLOR
--reserved 1-
--reserved 2-
-INTERSECTION
-
-
 
   
 ---- LINES ---- from,to ----
-id1,id4
+id1,id2
 0
 
-id4,id2
+id2,id3
 0
 
-id2,id5
-0
-
-id5,id6
+id4,id5
 0
 YES
-id5,id7
-0
-NO
-id7,id8
+id6,id7
 0
 YES
-id7,id9
-0
-NO
-id9,id11
+id8,id9
 0
 YES
-id9,id10
-0
-NO
-id10,id12
+id10,id11
 0
 YES
-id10,id13
+id3,id4
+0
+
+id4,id6
 0
 NO
-id6,id14
+id6,id8
+0
+NO
+id8,id10
+0
+NO
+id5,id12
 0
 
-id8,id14
+id7,id12
 0
 
-id11,id14
+id9,id12
 0
 
-id12,id14
+id11,id12
 0
 
-id13,id14
+id10,id14
 0
-
-id14,id3
+NO
+id14,id15
+0
+YES
+id15,id12
 0
 
