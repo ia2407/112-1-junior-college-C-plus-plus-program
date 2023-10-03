@@ -5,19 +5,20 @@
 
 int main()
 {
-	int val, val2, sum, sum2, sum3, sum4, sum5;
-	val = 6;
-	val = 8;
-	sum = val + val2;
-	sum2 = val - val2;
-	sum3 = val * val2;
-	sum4 = val / val2;
-	sum5 = val % val2;
-	printf("%d加上%d的和%d\n", val, val2, sum);
-	printf("%d減%d的差%d\n", val, val2, sum2);
-	printf("%d乘%d的積%d\n", val, val2, sum3);
-	printf("%d除%d的商%d\n", val, val2, sum4);
-	printf("%d除%d的餘數%d\n", val, val2, sum5);
+	int score = 0;
+	printf("請輸入成績\n");
+	scanf_s("%d", & score);
+
+	if (score >= 90)
+		printf("表現優秀");
+	else if (score >= 80)
+		printf("表現不錯");
+	else if (score >= 70)
+		printf("恭喜通過");
+	else if (score >= 60)
+		printf("好險有過");
+	else
+		printf("請報名暑修");
 }
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
