@@ -1,0 +1,3 @@
+﻿  ConsoleApplication2.cpp
+C:\Users\阿雯\source\repos\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(10,2): warning C4551: 函式呼叫遺漏引數清單
+  ConsoleApplication2.vcxproj -> C:\Users\阿雯\source\repos\ConsoleApplication2\Debug\ConsoleApplication2.exe
