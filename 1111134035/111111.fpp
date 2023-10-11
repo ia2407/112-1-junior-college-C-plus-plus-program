@@ -1,9 +1,9 @@
-12       	 <--SHAPES
-13       	 <--LINES
+28       	 <--SHAPES
+39       	 <--LINES
 id1
 2       	 <--TYPE
-289       	 <--LEFT
-46       	 <--TOP
+224       	 <--LEFT
+60       	 <--TOP
 70       	 <--WIDTH
 30       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
@@ -17,9 +17,9 @@ START
 
 id2
 91       	 <--TYPE
-265       	 <--LEFT
-124       	 <--TOP
-109       	 <--WIDTH
+213       	 <--LEFT
+107       	 <--TOP
+93       	 <--WIDTH
 40       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
 0       	 <--BORDERCOLOR
@@ -27,43 +27,43 @@ id2
 -reserved 1-
 -reserved 2-
 INPUT
-輸入車速
-f
+輸入值
+s
 
 id3
-91       	 <--TYPE
-216       	 <--LEFT
-198       	 <--TOP
-179       	 <--WIDTH
-40       	 <--HEIGHT
+92       	 <--TYPE
+166       	 <--LEFT
+170       	 <--TOP
+206       	 <--WIDTH
+50       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
 0       	 <--BORDERCOLOR
 0       	 <--BORDERCOLOR
 -reserved 1-
 -reserved 2-
-INPUT
-輸入內外車車 0 或1
-d
+IF_EQUAL
+s
+1
 
 id4
 91       	 <--TYPE
-481       	 <--LEFT
-309       	 <--TOP
-141       	 <--WIDTH
+221       	 <--LEFT
+271       	 <--TOP
+90       	 <--WIDTH
 40       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
 0       	 <--BORDERCOLOR
 0       	 <--BORDERCOLOR
 -reserved 1-
 -reserved 2-
-INPUT
-輸入對方車速
-h
+OUTPUT
+a
+
 
 id5
 92       	 <--TYPE
-274       	 <--LEFT
-269       	 <--TOP
+700       	 <--LEFT
+31       	 <--TOP
 112       	 <--WIDTH
 50       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
@@ -71,59 +71,59 @@ id5
 0       	 <--BORDERCOLOR
 -reserved 1-
 -reserved 2-
-IF_GREATER_EQUAL
-d
-1
+IF_EQUAL
+s
+2
 
 id6
-91       	 <--TYPE
-173       	 <--LEFT
-361       	 <--TOP
-110       	 <--WIDTH
-40       	 <--HEIGHT
+92       	 <--TYPE
+441       	 <--LEFT
+222       	 <--TOP
+112       	 <--WIDTH
+50       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
 0       	 <--BORDERCOLOR
 0       	 <--BORDERCOLOR
 -reserved 1-
 -reserved 2-
-OUTPUT
-不用超啊你
-
+IF_EQUAL
+s
+3
 
 id7
-91       	 <--TYPE
-130       	 <--LEFT
-286       	 <--TOP
-90       	 <--WIDTH
-40       	 <--HEIGHT
+92       	 <--TYPE
+550       	 <--LEFT
+397       	 <--TOP
+112       	 <--WIDTH
+50       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
 0       	 <--BORDERCOLOR
 0       	 <--BORDERCOLOR
 -reserved 1-
 -reserved 2-
-INPUT
-0
-
+IF_EQUAL
+s
+4
 
 id8
-91       	 <--TYPE
-483       	 <--LEFT
-237       	 <--TOP
-90       	 <--WIDTH
-40       	 <--HEIGHT
+92       	 <--TYPE
+463       	 <--LEFT
+475       	 <--TOP
+112       	 <--WIDTH
+50       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
 0       	 <--BORDERCOLOR
 0       	 <--BORDERCOLOR
 -reserved 1-
 -reserved 2-
-INPUT
-1
-
+IF_EQUAL
+s
+5
 
 id9
 92       	 <--TYPE
-410       	 <--LEFT
-385       	 <--TOP
+617       	 <--LEFT
+546       	 <--TOP
 112       	 <--WIDTH
 50       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
@@ -131,15 +131,15 @@ id9
 0       	 <--BORDERCOLOR
 -reserved 1-
 -reserved 2-
-IF_GREATER
-h
-f
+IF_EQUAL
+s
+6
 
 id10
 91       	 <--TYPE
-616       	 <--LEFT
-399       	 <--TOP
-94       	 <--WIDTH
+889       	 <--LEFT
+116       	 <--TOP
+90       	 <--WIDTH
 40       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
 0       	 <--BORDERCOLOR
@@ -147,13 +147,13 @@ id10
 -reserved 1-
 -reserved 2-
 OUTPUT
-別超了哥
+b
 
 
 id11
 91       	 <--TYPE
-296       	 <--LEFT
-376       	 <--TOP
+257       	 <--LEFT
+396       	 <--TOP
 90       	 <--WIDTH
 40       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
@@ -162,13 +162,253 @@ id11
 -reserved 1-
 -reserved 2-
 OUTPUT
-超!
+c
 
 
 id12
+91       	 <--TYPE
+266       	 <--LEFT
+445       	 <--TOP
+90       	 <--WIDTH
+40       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+OUTPUT
+d
+
+
+id13
+91       	 <--TYPE
+305       	 <--LEFT
+512       	 <--TOP
+90       	 <--WIDTH
+40       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+OUTPUT
+e
+
+
+id14
+91       	 <--TYPE
+362       	 <--LEFT
+577       	 <--TOP
+90       	 <--WIDTH
+40       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+OUTPUT
+f
+
+
+id15
+92       	 <--TYPE
+756       	 <--LEFT
+561       	 <--TOP
+112       	 <--WIDTH
+50       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+IF_EQUAL
+s
+7
+
+id16
+92       	 <--TYPE
+847       	 <--LEFT
+449       	 <--TOP
+112       	 <--WIDTH
+50       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+IF_EQUAL
+s
+8
+
+id17
+92       	 <--TYPE
+1028       	 <--LEFT
+491       	 <--TOP
+112       	 <--WIDTH
+50       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+IF_EQUAL
+s
+9
+
+id18
+92       	 <--TYPE
+1162       	 <--LEFT
+418       	 <--TOP
+112       	 <--WIDTH
+50       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+IF_EQUAL
+s
+10
+
+id19
+92       	 <--TYPE
+1287       	 <--LEFT
+340       	 <--TOP
+112       	 <--WIDTH
+50       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+IF_EQUAL
+s
+11
+
+id20
+92       	 <--TYPE
+1422       	 <--LEFT
+238       	 <--TOP
+112       	 <--WIDTH
+50       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+IF_EQUAL
+s
+12
+
+id21
+91       	 <--TYPE
+649       	 <--LEFT
+654       	 <--TOP
+90       	 <--WIDTH
+40       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+OUTPUT
+A
+
+
+id22
+91       	 <--TYPE
+839       	 <--LEFT
+656       	 <--TOP
+90       	 <--WIDTH
+40       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+OUTPUT
+B
+
+
+id23
+91       	 <--TYPE
+1016       	 <--LEFT
+630       	 <--TOP
+90       	 <--WIDTH
+40       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+OUTPUT
+C
+
+
+id24
+91       	 <--TYPE
+1212       	 <--LEFT
+551       	 <--TOP
+90       	 <--WIDTH
+40       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+OUTPUT
+D
+
+
+id25
+91       	 <--TYPE
+1370       	 <--LEFT
+479       	 <--TOP
+90       	 <--WIDTH
+40       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+OUTPUT
+E
+
+
+id26
+91       	 <--TYPE
+1524       	 <--LEFT
+386       	 <--TOP
+90       	 <--WIDTH
+40       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+OUTPUT
+F
+
+
+id27
+91       	 <--TYPE
+1609       	 <--LEFT
+181       	 <--TOP
+213       	 <--WIDTH
+40       	 <--HEIGHT
+16777215       	 <--BACKCOLOR
+0       	 <--BORDERCOLOR
+0       	 <--BORDERCOLOR
+-reserved 1-
+-reserved 2-
+OUTPUT
+請輸入1~12
+
+
+id28
 2       	 <--TYPE
-288       	 <--LEFT
-468       	 <--TOP
+752       	 <--LEFT
+849       	 <--TOP
 70       	 <--WIDTH
 30       	 <--HEIGHT
 16777215       	 <--BACKCOLOR
@@ -188,36 +428,114 @@ id1,id2
 id2,id3
 0
 
+id3,id4
+0
+YES
 id3,id5
 0
-
-id5,id8
+NO
+id5,id10
 0
 YES
-id5,id7
+id5,id6
 0
 NO
-id7,id6
-0
-
-id8,id4
-0
-
-id4,id9
-0
-
-id9,id10
+id6,id11
 0
 YES
-id9,id11
+id6,id7
 0
 NO
-id10,id12
+id7,id12
+0
+YES
+id7,id8
+0
+NO
+id8,id13
+0
+YES
+id8,id9
+0
+NO
+id9,id14
+0
+YES
+id9,id15
+0
+NO
+id15,id21
+0
+YES
+id15,id16
+0
+NO
+id16,id22
+0
+YES
+id16,id17
+0
+NO
+id17,id23
+0
+YES
+id17,id18
+0
+NO
+id18,id24
+0
+YES
+id18,id19
+0
+NO
+id19,id25
+0
+YES
+id19,id20
+0
+NO
+id20,id26
+0
+YES
+id20,id27
+0
+NO
+id4,id28
 0
 
-id11,id12
+id10,id28
 0
 
-id6,id12
+id11,id28
+0
+
+id12,id28
+0
+
+id13,id28
+0
+
+id14,id28
+0
+
+id21,id28
+0
+
+id22,id28
+0
+
+id23,id28
+0
+
+id24,id28
+0
+
+id25,id28
+0
+
+id26,id28
+0
+
+id27,id2
 0
 
