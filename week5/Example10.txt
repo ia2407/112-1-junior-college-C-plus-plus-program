@@ -1,0 +1,24 @@
+/* 在if/else條件敘述使用邏輯運算式 */
+#include <stdio.h>
+
+int main() 
+{
+    int h;                      /* 宣告變數 */ 
+    
+    printf("請輸入身高==> \n"); /* 顯示提示字串 */ 
+    scanf("%d", &h);            /* 輸入整數值 */ 
+
+    if ( h > 50 && h < 200 )    /* if/else條件敘述 */ 
+    {
+        printf("身高符合範圍!\n");
+    }
+    else
+    {
+        printf("身高不符合範圍!\n");
+    }    
+
+    printf("結束處理\n");
+	
+    return 0;
+}
+
