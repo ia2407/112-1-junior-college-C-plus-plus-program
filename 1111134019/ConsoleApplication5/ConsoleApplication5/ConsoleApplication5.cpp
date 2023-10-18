@@ -1,20 +1,19 @@
-﻿// ConsoleApplication4.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
+﻿// ConsoleApplication5.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
 //
 
 #include <iostream>
 
 int main()
-
 {
     int count = 0;
-    for (count = 0; count <= 10; count++)
-    {
-        for (int i = 1; i <= 10 - count; i++)
+    for (count = 10; count > 0; count--)
         {
-            printf("*");
+            for (int i = 1; i <= 11 - count; i++)
+            {
+                printf("*", count);
+                        }
+            printf("\n");
         }
-        printf("\n");
-    }
 }
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表

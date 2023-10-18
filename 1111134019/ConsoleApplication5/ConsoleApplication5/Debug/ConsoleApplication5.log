@@ -1,0 +1,4 @@
+﻿  ConsoleApplication5.cpp
+C:\Users\User\source\repos\ConsoleApplication5\ConsoleApplication5\ConsoleApplication5.cpp(13,29): warning C4474: 'printf': 傳遞給格式字串的引數太多
+C:\Users\User\source\repos\ConsoleApplication5\ConsoleApplication5\ConsoleApplication5.cpp(13,29): message : 預留位置及其參數需要 0 個 variadic 引數，但卻提供了 1 個
+  ConsoleApplication5.vcxproj -> C:\Users\User\source\repos\ConsoleApplication5\Debug\ConsoleApplication5.exe
