@@ -1,0 +1,3 @@
+﻿  ConsoleApplication4.cpp
+C:\Users\User\Desktop\2023.10.18\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(7,6): warning C4101: 'a': 未參考的區域變數
+  ConsoleApplication4.vcxproj -> C:\Users\User\Desktop\2023.10.18\ConsoleApplication4\Debug\ConsoleApplication4.exe
