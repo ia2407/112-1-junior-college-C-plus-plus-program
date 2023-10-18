@@ -1,30 +1,33 @@
 ﻿// ConsoleApplication4.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
-//
 
-#include <iostream>
+
+#include <stdio.h>
+#include <math.h>
 
 int main()
 {
-    int score = 0;
-    printf("請輸入成績==>\n");
+    int amout = 0;
+    int money = 0;
+    int rate = 0;
+    double y = 0.00;
+    int year = 1;
+    printf("請輸入存款目標\n");
+    scanf_s("%d",& amout)
     
-    scanf_s("%d", & score);
+    printf("請輸入本金\n");
+    scanf_s("%d", & money)
     
-    if (score >= 90)
-        printf("great");
-    else if (score >= 80)
-        printf("good");
-    else if (score >= 70)
-        printf("nice");
-    else if (score >= 60)
-        printf("ok");
-    else printf("failuer");
+    printf("請輸入年利率\n");
+    scanf_s("%d", & rate)
+    y= rate * 0.01
     
+        while (money*pow(1+y,year)<amout)
+        {
+            year += 1;
+        }
+    printf("至少需%d年" year);
+} 
 
-     
-
-    
- }
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
 // 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表

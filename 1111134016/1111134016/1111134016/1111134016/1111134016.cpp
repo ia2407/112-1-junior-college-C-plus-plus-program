@@ -2,36 +2,64 @@
 //
 
 #include <iostream>
-
-int main()
+#include<stdio.h>
+int main(void)
 {
-    int car, yes, no, dis, car2;
-        printf("請輸入我的車速==> \n");
-        scanf_s("%d", &car);
-        printf("請輸入內側有無車輛(有為0,無為1)==> \n");
-        scanf_s("%d", &yes);
-        if (yes == 1)
-        {
-            printf("維持車道");
+    int grade;
+    unsigned int aCount = 0;
+    unsigned int bCount = 0;
+    unsigned int cCount = 0;
+    unsigned int dCount = 0;
+    unsigned int fCount = 0;
+
+    puts("Enter the letter grades.");
+    puts("Enter the EOF character to end input.");
+
+    while ((grade = getchar()) != EOF) {
+
+
+        if (grade == 'a' || grade == 'A') {
+
+            ++aCount;
         }
-        if (yes == 0)
-        {
-            printf("請輸入內側車輛車速==> \n");
-            scanf_s("%d", &car2);
-            printf("請輸入與內側車輛距離==> \n");
-            scanf_s("%d", &dis);
-            if (car2<30,dis>30)
-            {
-                printf("快速超車");
-            }
-            else
-            {
-                printf("維持車道");
-            }
+        else if (grade == 'b' || grade == 'B') {
+
+            ++bCount;
         }
-        return 0;
+
+        else if (grade == 'c' || grade == 'C') {
+
+            ++cCount;
         }
- 
+        else if (grade == 'd' || grade == 'D') {
+
+            ++dCount;
+        }
+        else if (grade == 'f' || grade == 'F') {
+
+            ++fCount;
+        }
+        else if (grade == '\n' || grade == '\t' || grade == ' ') {
+        }
+        else {
+            printf("%s", "Incorrect letter grade entered.");
+            puts(" Enter a new grade.");
+        }
+
+    }
+
+    puts("\nTotals for each letter grade are:");
+    printf("A: %u\n", aCount);
+    printf("B: %u\n", bCount);
+    printf("C: %u\n", cCount);
+    printf("D: %u\n", dCount);
+    printf("F: %u\n", fCount);
+    return 0;
+}
+
+
+
+
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
 // 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
