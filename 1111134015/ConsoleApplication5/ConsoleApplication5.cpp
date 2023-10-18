@@ -1,17 +1,16 @@
-﻿// ConsoleApplication4.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
+﻿// ConsoleApplication5.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
 //
 
 #include <iostream>
 
 int main()
 {
-    int a, b, c;
-    for (a =1;a<=10;a++)
+    int a=0;
+    for (a = 0; a <= 10; a++)
     {
-        for (b = 1; b <= a; b++)
+        for (int b = 1; b <= 10-a; b++)
         {
             printf("*");
-            c = 1;
         }
         printf("\n");
     }
