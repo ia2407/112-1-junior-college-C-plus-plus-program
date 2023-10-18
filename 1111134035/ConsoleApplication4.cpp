@@ -1,33 +1,58 @@
 ﻿// ConsoleApplication4.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
-
+//
 
 #include <stdio.h>
-#include <math.h>
 
 int main()
 {
-    int amout = 0;
-    int money = 0;
-    int rate = 0;
-    double y = 0.00;
-    int year = 1;
-    printf("請輸入存款目標\n");
-    scanf_s("%d",& amout)
-    
-    printf("請輸入本金\n");
-    scanf_s("%d", & money)
-    
-    printf("請輸入年利率\n");
-    scanf_s("%d", & rate)
-    y= rate * 0.01
-    
-        while (money*pow(1+y,year)<amout)
-        {
-            year += 1;
-        }
-    printf("至少需%d年" year);
-} 
+    int a, b, c,l;
+	for (a = 1; a <= 10; a++)
+	{
+		for (b = 1; b <= a; b++) {
+			printf("*");
+			c = 1;
+		}
+		printf("\n");
+	}
+	for (a = 1; a <= 10; a++)
+	{
 
+		for (b = 10; b > a; b--) {
+
+			printf(" ");
+
+		}
+
+
+		for (l = 1; l <= a; l++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+	int d, e, f,m;
+	for (d = 1; d <= 10; d++)
+	{
+		for (e = d; e <= 10; e++) {
+			printf("*");
+			
+		}
+		printf("\n");
+	}
+	for (d = 1; d <= 10; d++)
+	{
+		for (e = d; e > 10; e--) {
+			printf(" ");
+		}
+			for (m = 1; m <= d; m++)
+			{
+				printf("*");
+			}
+		
+		printf("\n");
+	}
+	return 0;
+}
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
 // 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
