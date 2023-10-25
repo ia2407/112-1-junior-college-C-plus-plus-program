@@ -1,0 +1,4 @@
+﻿  副程式三角形.cpp
+C:\Users\User\Desktop\副程式三角形\副程式三角形\副程式三角形.cpp(8,9): warning C4101: 'j': 未參考的區域變數
+C:\Users\User\Desktop\副程式三角形\副程式三角形\副程式三角形.cpp(8,6): warning C4101: 'i': 未參考的區域變數
+  副程式三角形.vcxproj -> C:\Users\User\Desktop\副程式三角形\Debug\副程式三角形.exe
