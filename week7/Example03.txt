@@ -1,0 +1,21 @@
+/* 使用參數傳遞資料至函數 */
+#include <stdio.h>
+
+/* play()函數的定義 */
+void play(int b)
+{
+    printf("玩一次%d元的遊戲\n", b);
+}
+
+/* 在main()函數呼叫play()函數 */ 
+int main() 
+{
+    printf("開始玩遊戲...\n");
+    play(10);        /* 第1次呼叫函數 */ 
+    printf("再玩一次...\n");
+    play(50);        /* 第2次呼叫函數 */ 	   
+    printf("結束玩遊戲...\n");
+    
+    return 0;
+}
+

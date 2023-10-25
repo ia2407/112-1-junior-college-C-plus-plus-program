@@ -1,0 +1,25 @@
+/* 建立擁有多參數的函數 */
+#include <stdio.h>
+
+/* play()函數的定義 */
+void play(int b, int t)
+{
+    printf("玩%d次%d元的遊戲\n",t, b);
+}
+
+/* 在main()函數呼叫play()函數 */ 
+int main() 
+{
+    int t, price;                 /* 宣告變數 */ 
+    
+    printf("玩多少錢的遊戲==> \n");  /* 顯示提示字串 */ 
+    scanf("%d", &price);          /* 輸入整數值 */ 
+   
+    printf("玩多少次遊戲==> \n");    /* 顯示提示字串 */ 
+    scanf("%d", &t);              /* 輸入整數值 */ 
+
+    play(price, t);               /* 呼叫函數 */ 	   
+    
+    return 0;
+}
+

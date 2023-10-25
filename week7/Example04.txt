@@ -1,0 +1,27 @@
+/* 使用變數作為引數值 */
+#include <stdio.h>
+
+/* play()函數的定義 */
+void play(int b)
+{
+    printf("玩一次%d元的遊戲\n", b);
+}
+
+/* 在main()函數呼叫play()函數 */ 
+int main() 
+{
+    int price;                 /* 宣告變數 */ 
+    
+    printf("第1次玩多少錢的遊戲==> \n");  /* 顯示提示字串 */ 
+    scanf("%d", &price);       /* 輸入整數值 */ 
+
+    play(price);               /* 第1次呼叫函數 */ 
+    
+    printf("第2次玩多少錢的遊戲==> \n");  /* 顯示提示字串 */ 
+    scanf("%d", &price);       /* 輸入整數值 */ 
+
+    play(price);               /* 第2次呼叫函數 */ 	   
+    
+    return 0;
+}
+

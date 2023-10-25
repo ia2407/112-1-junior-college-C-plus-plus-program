@@ -1,0 +1,21 @@
+/* Ω㊣ㄧ计 */
+#include <stdio.h>
+
+/* play()ㄧ计﹚竡 */
+void play()
+{
+    printf("Ω笴栏\n");
+}
+
+/* main()ㄧ计㊣play()ㄧ计 */ 
+int main() 
+{
+    printf("秨﹍笴栏...\n");
+    play();            /* 材1Ω㊣ㄧ计 */ 
+    printf("Ω...\n");
+    play();            /* 材2Ω㊣ㄧ计 */ 	   
+    printf("挡笴栏...\n");
+    
+    return 0;
+}
+
