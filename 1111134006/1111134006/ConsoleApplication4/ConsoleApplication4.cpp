@@ -2,39 +2,23 @@
 //
 
 #include <iostream>
-#include<stdio.h>
+
 int main()
 {
-    int car, dis, otherspeed;
-    int  vehicles;
-    printf("輸入目前車速 ==> \n");
-    scanf_s("%d", &car);
-    printf("輸入內側有無車輛(是=1,無=0) ==> \n");
-    scanf_s("%d", &vehicles);
-
-    if (vehicles == 0)
-    {
-        printf("進行超車!");
-    }
-    if (vehicles == 1)
-    {
-        printf("輸入內側車輛車速 ==> \n");
-        scanf_s("%d", &otherspeed);
-        printf("輸入內側車道距離 ==> \n");
-        scanf_s("%d", &dis);
-        if (dis > 30, otherspeed < 30)
-        {
-            printf("進行超車!");
-        }
-        else
-        {
-            printf("維持原有車道");
-        }
-
-
-    }
-    return 0;
+	int value = 11, i;
+	double result = 4.0, salary = 27000;
+	printf("please input the number of terms:");
+	scanf_s("%d", &value);
+	for (i = 2; i <= value; i++) {
+		printf("%lf\n", result);
+		if (!(i % 2))
+			result -= 4.0 / (i * 2 - 1);
+		else
+			result += 4.0 / (i * 2 - 1);
+	}
+	printf("%lf\n", result);
 }
+
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
 // 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
 
