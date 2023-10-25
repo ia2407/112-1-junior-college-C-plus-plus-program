@@ -1,0 +1,4 @@
+﻿  ConsoleApplication4.cpp
+C:\Users\User\Desktop\三角形迴圈\ConsoleApplication4\ConsoleApplication4.cpp(77,9): warning C4101: 'i': 未參考的區域變數
+C:\Users\User\Desktop\三角形迴圈\ConsoleApplication4\ConsoleApplication4.cpp(77,11): warning C4101: 'n': 未參考的區域變數
+  ConsoleApplication4.vcxproj -> C:\Users\User\Desktop\三角形迴圈\Debug\ConsoleApplication4.exe
