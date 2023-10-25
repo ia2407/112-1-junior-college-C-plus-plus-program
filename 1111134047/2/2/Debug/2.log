@@ -1,0 +1,4 @@
+﻿  22222222.cpp
+C:\Users\User\Desktop\222\22222222\22222222\22222222.cpp(10,9): warning C4101: 'k': 未參考的區域變數
+C:\Users\User\Desktop\222\22222222\22222222\22222222.cpp(10,6): warning C4101: 'h': 未參考的區域變數
+  22222222.vcxproj -> C:\Users\User\Desktop\222\22222222\Debug\22222222.exe
