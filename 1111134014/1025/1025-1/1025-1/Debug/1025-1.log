@@ -1,0 +1,6 @@
+﻿  1025-1.cpp
+C:\Users\User\Desktop\1025\1025-1\1025-1\1025-1.cpp(78,10): warning C4477: 'scanf_s' : 格式字串 '%d' 需要 'int *' 類型的引數，但 variadic 引數 1 的類型為 'int'
+C:\Users\User\Desktop\1025\1025-1\1025-1\1025-1.cpp(81,10): warning C4477: 'scanf_s' : 格式字串 '%d' 需要 'int *' 類型的引數，但 variadic 引數 1 的類型為 'int'
+C:\Users\User\Desktop\1025\1025-1\1025-1\1025-1.cpp(84,10): warning C4477: 'scanf_s' : 格式字串 '%d' 需要 'int *' 類型的引數，但 variadic 引數 1 的類型為 'int'
+C:\Users\User\Desktop\1025\1025-1\1025-1\1025-1.cpp(87,10): warning C4477: 'scanf_s' : 格式字串 '%d' 需要 'int *' 類型的引數，但 variadic 引數 1 的類型為 'int'
+  1025-1.vcxproj -> C:\Users\User\Desktop\1025\1025-1\Debug\1025-1.exe

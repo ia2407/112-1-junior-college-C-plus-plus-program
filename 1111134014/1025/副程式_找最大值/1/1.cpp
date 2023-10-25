@@ -1,0 +1,28 @@
+﻿#include <stdio.h>
+
+int max(int a, int b, int c);
+
+/* play()函數的定義 */
+int max(int a, int b, int c)
+{
+    int max_value = a;
+    if (b > max_value)
+        max_value = b;
+    if (c > max_value)
+        max_value = c;
+
+    return max_value;
+}
+
+/* 在main()函數呼叫play()函數 */
+int main()
+{
+    int x, y, z;                 /* 宣告變數 */
+
+    printf("請輸入三個值\n");  /* 顯示提示字串 */
+    scanf_s("%d %d %d", &x, &y, &z);          /* 輸入整數值 */
+
+    printf("最大值為:%d", max(x, y, z));               /* 呼叫函數 */
+
+    return 0;
+}
