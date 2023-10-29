@@ -1,0 +1,3 @@
+﻿  1029-2.cpp
+C:\Users\wanpi\source\repos\1029-2\1029-2\1029-2.cpp(15,15): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+  1029-2.vcxproj -> C:\Users\wanpi\source\repos\1029-2\x64\Debug\1029-2.exe
