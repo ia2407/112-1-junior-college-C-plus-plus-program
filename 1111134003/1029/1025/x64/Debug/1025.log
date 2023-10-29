@@ -1,0 +1,4 @@
+﻿  1025.cpp
+C:\Users\wanpi\source\repos\1025\1025\1025.cpp(77,9): warning C4101: 'i': 未參考的區域變數
+C:\Users\wanpi\source\repos\1025\1025\1025.cpp(77,12): warning C4101: 'n': 未參考的區域變數
+  1025.vcxproj -> C:\Users\wanpi\source\repos\1025\x64\Debug\1025.exe
