@@ -1,33 +1,24 @@
-﻿// ConsoleApplication4.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
+﻿// ConsoleApplication1.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
 //
 
 #include <stdio.h>
-int reward(int p, int aims, double r)
+int fact(int x)
 {
-	int i = 0;
-	while (p < aims)
-	{
-		p += p * r;
-		i += 1;
-	}
-	return i;
+    int f = 1;
+    for (int i = 1; i <= x; i++)
+    {
+        f *= i;
+    }
+    return f;
 }
 
 int main()
 {
-	int money, aims, result;
-	double r = 0.05;
-
-	printf("請輸入本金\n");
-	scanf_s("%d", &money);
-
-	printf("請輸入存款目標\n");
-	scanf_s("%d", &aims);
-
-	result = reward(money, aims, r);
-
-	printf("至少需要%d年", result);
-
+    int f, result;
+    printf("請輸入要算出階層的數\n");
+    scanf_s("%d", &f);
+    result = fact(f);
+    printf("%d!=%d", f, result);
 }
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
