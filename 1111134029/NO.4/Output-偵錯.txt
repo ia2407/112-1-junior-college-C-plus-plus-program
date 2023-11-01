@@ -1,0 +1,12 @@
+﻿NO.4.exe' (Win32): 已載入 'C:\Users\User\Desktop\NO.4\Debug\NO.4.exe'。已載入符號。
+NO.4.exe' (Win32): 已載入 'C:\Windows\SysWOW64\ntdll.dll'。
+NO.4.exe' (Win32): 已載入 'C:\Windows\SysWOW64\kernel32.dll'。
+NO.4.exe' (Win32): 已載入 'C:\Windows\SysWOW64\KernelBase.dll'。
+NO.4.exe' (Win32): 已載入 'C:\Windows\SysWOW64\vcruntime140d.dll'。
+NO.4.exe' (Win32): 已載入 'C:\Windows\SysWOW64\ucrtbased.dll'。
+0xb8 執行緒以返回碼 0 (0x0) 結束。
+NO.4.exe' (Win32): 已載入 'C:\Windows\SysWOW64\kernel.appcore.dll'。
+NO.4.exe' (Win32): 已載入 'C:\Windows\SysWOW64\msvcrt.dll'。
+0x2d1c 執行緒以返回碼 0 (0x0) 結束。
+0x854 執行緒以返回碼 0 (0x0) 結束。
+'[7648] NO.4.exe' 程式以返回碼 0 (0x0) 結束。
