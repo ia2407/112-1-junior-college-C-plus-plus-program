@@ -3,52 +3,31 @@
 
 #include <iostream>
 
-int main(void)
+int pi();//副程式原型宣告
+double pi(int v) {//傳入整數,傳回雙精度浮點數
+	int  i;//宣告v為整數,且初始值為1,宣告i為整數
+	double re = 4.0;//宣告re為雙精度浮點數(64 bits)
+
+	for (i = 2; i <= v; i++) {//迴圈(變數i,初始值=2,判斷i是否<=v,遞增)
+		printf("%lf\n", re);//輸出(雙精度浮點數(long float)
+		if (!(i % 2))
+			re -= 4.0 / (i * 2 - 1);
+		else
+			re += 4.0 / (i * 2 - 1);
+	}
+	printf("%lf\n", re);
+	return re;
+}
+
+int main()//主程式
 {
-    int grade; 
-    unsigned int aCount = 0; // number of As
-    unsigned int bCount = 0; // number of Bs
-    unsigned int cCount = 0; // number of Cs
-    unsigned int dCount = 0; // number of Ds
-    unsigned int fCount = 0; // number of Fs
-   
+	int a = 1;
+	printf("please input the number of terms:");//輸出(提醒字串)
+	scanf_s("%d", &a);//輸入(整數值,&用來取得變數a的記憶體位址)
+	pi(a);//傳入整數型態
+}
 
-    puts("Enter the letter grades.");
-    puts("Enter the EOF character to end input.");
-   
-  
-    while ((grade = getchar()) != EOF) {
-        if (grade == 'A' || grade == 'a') {
-            ++aCount;
-        }
-        else if (grade == 'B' || grade == 'b') {
-            ++bCount;
-        }
-        else if (grade == 'C' || grade == 'c') {
-            ++cCount;
-        }
-        else if (grade == 'D' || grade == 'd') {
-            ++dCount;
-        }
-        else if (grade == 'F' || grade == 'f') {
-            ++fCount;
-        }
-        else if (grade == '\n' || grade == '\t' || grade == ' ') {
 
-        }
-        else {
-            printf("%s", "Incorrect letter grade entered.");
-            puts("Enter a new grade.");
-        }
-    }
-    
-    puts("\nTotals for each letter grade are:");
-    printf("A: %u\n", aCount); // display number of A grades
-    printf("B: %u\n", bCount); // display number of B grades
-    printf("C: %u\n", cCount); // display number of C grades
-    printf("D: %u\n", dCount); // display number of D grades
-    printf("F: %u\n", fCount); // display number of F grades
-} 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
 // 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
 
