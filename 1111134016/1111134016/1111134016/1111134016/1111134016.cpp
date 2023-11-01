@@ -2,65 +2,34 @@
 //
 
 #include <iostream>
-#include<stdio.h>
-int main(void)
+
+double pi(int value);
+double pi(int value)
 {
-    int grade;
-    unsigned int aCount = 0;
-    unsigned int bCount = 0;
-    unsigned int cCount = 0;
-    unsigned int dCount = 0;
-    unsigned int fCount = 0;
-
-    puts("Enter the letter grades.");
-    puts("Enter the EOF character to end input.");
-
-    while ((grade = getchar()) != EOF) {
-
-
-        if (grade == 'a' || grade == 'A') {
-
-            ++aCount;
-        }
-        else if (grade == 'b' || grade == 'B') {
-
-            ++bCount;
-        }
-
-        else if (grade == 'c' || grade == 'C') {
-
-            ++cCount;
-        }
-        else if (grade == 'd' || grade == 'D') {
-
-            ++dCount;
-        }
-        else if (grade == 'f' || grade == 'F') {
-
-            ++fCount;
-        }
-        else if (grade == '\n' || grade == '\t' || grade == ' ') {
-        }
-        else {
-            printf("%s", "Incorrect letter grade entered.");
-            puts(" Enter a new grade.");
-        }
-
+    double result = 4.0;
+    for (int i = 2; i <= value; i++)
+    {
+        printf("%lf\n", result); // 打印每一项的结果
+        if (i % 2 == 0)
+            result -= 4.0 / (i * 2 - 1);
+        else
+            result += 4.0 / (i * 2 - 1);
     }
-
-    puts("\nTotals for each letter grade are:");
-    printf("A: %u\n", aCount);
-    printf("B: %u\n", bCount);
-    printf("C: %u\n", cCount);
-    printf("D: %u\n", dCount);
-    printf("F: %u\n", fCount);
-    return 0;
+    printf("%lf\n", result); // 打印最终结果
+    return result;
 }
 
 
+int main() {
+    int terms;
+    printf("Enter the number of terms: ");
+    scanf_s("%d", &terms);
+
+    double approx_pi = pi(terms);
 
 
-
+    return 0;
+}
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
 // 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
 
