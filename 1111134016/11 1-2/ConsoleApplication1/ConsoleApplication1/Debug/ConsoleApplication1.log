@@ -1,0 +1,10 @@
+﻿  ConsoleApplication1.cpp
+E:\程設設\11 1-2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(21,16): error C2065: '_Item_': 未宣告的識別項
+E:\程設設\11 1-2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(17,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\程設設\11 1-2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(19,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\程設設\11 1-2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(46,10): error C2065: 'count2': 未宣告的識別項
+E:\程設設\11 1-2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(46,22): error C2065: 'count2': 未宣告的識別項
+E:\程設設\11 1-2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(46,35): error C2065: 'count2': 未宣告的識別項
+E:\程設設\11 1-2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(47,47): error C2065: 'count2': 未宣告的識別項
+E:\程設設\11 1-2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(49,15): error C2440: 'return': 無法由 'double (__cdecl *)(double)' 轉換為 'double'
+E:\程設設\11 1-2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(49,12): message : 沒有可以進行此轉換的內容

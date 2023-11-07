@@ -2,56 +2,32 @@
 //
 
 #include <stdio.h>
+int reward(int p, int aims, double r)
+{
+	int i = 0;
+	while (p < aims)
+	{
+		p += p * r;
+		i += 1;
+	}
+	return i;
+}
 
 int main()
 {
-    int a, b, c,l;
-	for (a = 1; a <= 10; a++)
-	{
-		for (b = 1; b <= a; b++) {
-			printf("*");
-			c = 1;
-		}
-		printf("\n");
-	}
-	for (a = 1; a <= 10; a++)
-	{
+	int money, aims, result;
+	double r = 0.05;
 
-		for (b = 10; b > a; b--) {
+	printf("請輸入本金\n");
+	scanf_s("%d", &money);
 
-			printf(" ");
+	printf("請輸入存款目標\n");
+	scanf_s("%d", &aims);
 
-		}
+	result = reward(money, aims, r);
 
+	printf("至少需要%d年", result);
 
-		for (l = 1; l <= a; l++)
-		{
-			printf("*");
-		}
-		printf("\n");
-	}
-	int d, e, f,m;
-	for (d = 1; d <= 10; d++)
-	{
-		for (e = d; e <= 10; e++) {
-			printf("*");
-			
-		}
-		printf("\n");
-	}
-	for (d = 1; d <= 10; d++)
-	{
-		for (e = d; e > 10; e--) {
-			printf(" ");
-		}
-			for (m = 1; m <= d; m++)
-			{
-				printf("*");
-			}
-		
-		printf("\n");
-	}
-	return 0;
 }
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表

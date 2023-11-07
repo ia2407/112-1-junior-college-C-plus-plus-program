@@ -1,0 +1,13 @@
+﻿1111134033-2.exe' (Win32): 已載入 'C:\Users\User\source\repos\1111134033-2\Debug\1111134033-2.exe'。已載入符號。
+1111134033-2.exe' (Win32): 已載入 'C:\Windows\SysWOW64\ntdll.dll'。
+1111134033-2.exe' (Win32): 已載入 'C:\Windows\SysWOW64\kernel32.dll'。
+1111134033-2.exe' (Win32): 已載入 'C:\Windows\SysWOW64\KernelBase.dll'。
+1111134033-2.exe' (Win32): 已載入 'C:\Windows\SysWOW64\apphelp.dll'。
+1111134033-2.exe' (Win32): 已載入 'C:\Windows\SysWOW64\vcruntime140d.dll'。
+1111134033-2.exe' (Win32): 已載入 'C:\Windows\SysWOW64\ucrtbased.dll'。
+0x2a44 執行緒以返回碼 0 (0x0) 結束。
+1111134033-2.exe' (Win32): 已載入 'C:\Windows\SysWOW64\kernel.appcore.dll'。
+1111134033-2.exe' (Win32): 已載入 'C:\Windows\SysWOW64\msvcrt.dll'。
+0x1dec 執行緒以返回碼 0 (0x0) 結束。
+0x3ec0 執行緒以返回碼 0 (0x0) 結束。
+'[12560] 1111134033-2.exe' 程式以返回碼 0 (0x0) 結束。
