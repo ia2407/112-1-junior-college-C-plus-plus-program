@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <iostream>
+int reward(double p, double r, double aims)
+{
+	double temp = 0;
+	int year = 0;
+	while (temp<aims)
+	{
+		year++;
+		temp = p * pow((100 + r) / 100, year);
+	}
+	return year;
+}
+int main()
+{
+	double p = 0.0;
+	double aims = 0.0;
+	double r = 0.05;
+	printf("請輸入本金==>\n");
+	scanf_s("%lf", &p);
+	printf_s("請輸入存款目標==>\n");
+	scanf_s("%lf", &aims);
+	printf("需要存款的年數=%d\n", reward(p, r, aims));
+	return 0;
+}
