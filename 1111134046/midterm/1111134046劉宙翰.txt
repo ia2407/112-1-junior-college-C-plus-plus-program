@@ -1,0 +1,24 @@
+#include <iostream>
+
+int reward(int p, double r, int aims)
+{
+    int year = 0;
+    while (p <= aims)
+    {
+        p = p * (1 + r );
+        year += 1;
+    }
+    return year;
+}
+int main()
+{
+    int p = 0,aims=0;
+    double r = 0;
+    printf("輸入本金");
+    scanf_s("%d", &p);
+    printf("輸入年利率"); 
+    scanf_s("%lf", &r);
+    printf("輸入存款目標");
+    scanf_s("%d",&aims);
+    printf("需要%d年", reward(p, r, aims));
+}
