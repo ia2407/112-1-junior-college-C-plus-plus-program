@@ -1,0 +1,11 @@
+﻿  1111134033.cpp
+C:\Users\User\source\repos\1111134033\1111134033\1111134033.cpp(19,8): warning C4477: 'scanf' : 格式字串 '%d' 需要 'int *' 類型的引數，但 variadic 引數 1 的類型為 'int'
+C:\Users\User\source\repos\1111134033\1111134033\1111134033.cpp(21,8): warning C4477: 'scanf' : 格式字串 '%d' 需要 'int *' 類型的引數，但 variadic 引數 1 的類型為 'int'
+C:\Users\User\source\repos\1111134033\1111134033\1111134033.cpp(23,8): warning C4477: 'scanf' : 格式字串 '%d' 需要 'int *' 類型的引數，但 variadic 引數 1 的類型為 'int'
+C:\Users\User\source\repos\1111134033\1111134033\1111134033.cpp(19,2): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\source\repos\1111134033\1111134033\1111134033.cpp(21,2): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\source\repos\1111134033\1111134033\1111134033.cpp(23,2): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\source\repos\1111134033\1111134033\1111134033.cpp(25,6): error C2084: 函式 'int reward(void)' 的主體已經被宣告了
+C:\Users\User\source\repos\1111134033\1111134033\1111134033.cpp(6): message : 請參閱 'reward' 之前的定義
+C:\Users\User\source\repos\1111134033\1111134033\1111134033.cpp(27,55): error C2065: 'y': 未宣告的識別項
+C:\Users\User\source\repos\1111134033\1111134033\1111134033.cpp(27,48): error C2065: 'reward': 未宣告的識別項

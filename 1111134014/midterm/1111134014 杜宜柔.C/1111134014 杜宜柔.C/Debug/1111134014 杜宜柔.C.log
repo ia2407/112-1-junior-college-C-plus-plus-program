@@ -1,0 +1,6 @@
+﻿  1111134014 杜宜柔.C.cpp
+C:\Users\User\Desktop\1111134014 杜宜柔.C\1111134014 杜宜柔.C\1111134014 杜宜柔.C.cpp(16,10): warning C4477: 'scanf_s' : 格式字串 '%d' 需要 'int *' 類型的引數，但 variadic 引數 1 的類型為 'int'
+C:\Users\User\Desktop\1111134014 杜宜柔.C\1111134014 杜宜柔.C\1111134014 杜宜柔.C.cpp(18,10): warning C4477: 'scanf_s' : 格式字串 '%lf' 需要 'double *' 類型的引數，但 variadic 引數 1 的類型為 'double'
+C:\Users\User\Desktop\1111134014 杜宜柔.C\1111134014 杜宜柔.C\1111134014 杜宜柔.C.cpp(20,10): warning C4477: 'scanf_s' : 格式字串 '%d' 需要 'int *' 類型的引數，但 variadic 引數 1 的類型為 'int'
+C:\Users\User\Desktop\1111134014 杜宜柔.C\1111134014 杜宜柔.C\1111134014 杜宜柔.C.cpp(32,9): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+  1111134014 杜宜柔.C.vcxproj -> C:\Users\User\Desktop\1111134014 杜宜柔.C\Debug\1111134014 杜宜柔.C.exe

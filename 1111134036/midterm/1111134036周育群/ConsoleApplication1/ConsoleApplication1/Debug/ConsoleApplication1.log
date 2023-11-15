@@ -1,0 +1,8 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\User\Desktop\1111134036周育群\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(7,14): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\User\Desktop\1111134036周育群\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(8,15): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\User\Desktop\1111134036周育群\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(9,13): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\User\Desktop\1111134036周育群\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(13,18): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\User\Desktop\1111134036周育群\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(27,12): warning C4477: 'printf' : 格式字串 '%f' 需要 'double' 類型的引數，但 variadic 引數 1 的類型為 'int'
+C:\Users\User\Desktop\1111134036周育群\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(16): warning C4715: 'reward': 不是所有控制路徑都傳回值
+  ConsoleApplication1.vcxproj -> C:\Users\User\Desktop\1111134036周育群\ConsoleApplication1\Debug\ConsoleApplication1.exe
