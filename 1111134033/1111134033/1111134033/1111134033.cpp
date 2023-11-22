@@ -2,25 +2,45 @@
 //
 
 #include <iostream>
+#define RESPONSES_SIZE 40 // define array sizes
+#define FREQUENCY_SIZE 11
 
-int fact(int x)
+// function main begins program execution
+int main(void)
 {
-	int result = 1;
-	int count = 1;
-	for (count = 1; count <= x; count++)
-	{
-		result = result * count;
-	}
-	return result;
+    // initialize frequency counters to 0
+    int freq[FREQUENCY_SIZE] = { 0 };
+
+    // place the survey responses in the responses array
+    int responses[RESPONSES_SIZE] = { 1, 2, 6, 4, 8, 5, 9, 7, 8, 10,
+         1, 6, 3, 8, 6, 10, 3, 8, 2, 7, 6, 5, 7, 6, 8, 6, 7, 5, 6, 6,
+         5, 6, 7, 5, 6, 4, 8, 6, 8, 10 };
+
+    // for each answer, select value of an element of array responses
+    // and use that value as an index in array frequency to 
+    // determine element to increment
+    for (size_t answer = 0; answer < RESPONSES_SIZE; ++answer) {
+        ++freq[responses[answer]];
+    }
+
+    // display results
+    printf("%s%17s\n", "Rating", "Frequency");
+
+    // output the frequencies in a tabular format
+    for (size_t rating = 1; rating < FREQUENCY_SIZE; ++rating) {
+        printf("%6d%17d\n", rating, freq[rating]);
+    }
+    for (size_t i = 0; i < FREQUENCY_SIZE; ++i) {
+        printf("%7u%13d        ", i, freq[i]);
+
+        for (int j = 1; j <= freq[i]; ++j) { // print one bar
+            printf("%c", '*');
+        }
+
+        puts(""); // end a histogram bar with a newline
+    }
 }
-int main()
-{
-	int x;
-	printf("請輸入值");
-	scanf_s("%d", &x);
-	fact(x);
-	printf("1*2*...*%d=%d", x, fact(x));
-}
+
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
 // 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
