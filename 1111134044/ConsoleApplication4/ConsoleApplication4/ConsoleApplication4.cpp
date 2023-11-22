@@ -1,31 +1,47 @@
 ﻿// ConsoleApplication4.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
 //
 
-#include <iostream>
+#include <stdio.h>
+#define RESPONSES_SIZE 40 
+#define FREQUENCY_SIZE 11
 
-int pi();//副程式原型宣告
-double pi(int v) {//傳入整數,傳回雙精度浮點數
-	int  i;//宣告v為整數,且初始值為1,宣告i為整數
-	double re = 4.0;//宣告re為雙精度浮點數(64 bits)
-
-	for (i = 2; i <= v; i++) {//迴圈(變數i,初始值=2,判斷i是否<=v,遞增)
-		printf("%lf\n", re);//輸出(雙精度浮點數(long float)
-		if (!(i % 2))
-			re -= 4.0 / (i * 2 - 1);
-		else
-			re += 4.0 / (i * 2 - 1);
-	}
-	printf("%lf\n", re);
-	return re;
-}
-
-int main()//主程式
+void print_result(int freq[FREQUENCY_SIZE]);
+int main(void)
 {
-	int a = 1;
-	printf("please input the number of terms:");//輸出(提醒字串)
-	scanf_s("%d", &a);//輸入(整數值,&用來取得變數a的記憶體位址)
-	pi(a);//傳入整數型態
+    
+    int frequency[FREQUENCY_SIZE] = { 0 };
+
+    int responses[RESPONSES_SIZE] = { 1, 2, 6, 4, 8, 5, 9, 7, 8, 10,
+         1, 6, 3, 8, 6, 10, 3, 8, 2, 7, 6, 5, 7, 6, 8, 6, 7, 5, 6, 6,
+         5, 6, 7, 5, 6, 4, 8, 6, 8, 10 };
+    
+    for (size_t answer = 0; answer < RESPONSES_SIZE; ++answer) {
+        ++frequency[responses[answer]];
+    }
+    print_result(frequency);
 }
+void print_result(int freq[FREQUENCY_SIZE])
+{
+    int rating,i,j;
+    printf("%s%17s\n", "Rating", "Frequency");
+    for (size_t rating = 1; rating < FREQUENCY_SIZE; ++rating)
+    {
+        printf("%6d%17d\n", rating, freq[rating]);
+
+    }
+    printf("%s%13s%17s\n", "Element", "Value", "Histogram");
+    for (size_t i = 1; i < FREQUENCY_SIZE; ++i) {
+        printf("%7u%13d        ", i, freq[i]);
+
+        for (int j = 1; j <= freq[i]; ++j) { // print one bar
+            printf("%c", '*');
+        }
+
+        puts(""); // end a histogram bar with a newline
+    }
+}
+
+   
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
 // 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
