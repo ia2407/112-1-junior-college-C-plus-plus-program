@@ -1,17 +1,37 @@
-﻿// ConsoleApplication4.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
-//
+﻿#include <stdio.h>
+#define RESPONSES_SIZE 40
+#define FREQUENCY_SIZE 11
 
-#include <iostream>
-#include<stdio.h>
-int main()
+void print_result(int frequency[FREQUENCY_SIZE])
 {
-    int a,b,c,d,e,f,g;
-    a = 4; b = 2;
-    c = a + b, d = a - b, e = a * b, f = a / b, g = a % b;
-    printf("和%d\n差為%d\n積為%d\n商為%d\n餘數為%d\n",c,d,e,f,g);
-    std::cout << "Hello World!\n";
+    printf("%s%17s\t\t%s\n", "Rating", "Frequency", "his");
+
+    for (int rating = 1; rating < FREQUENCY_SIZE; ++rating) {
+        printf("%6d%17d\t\t", rating, frequency[rating]);
+
+        for (int i = 1; i <= frequency[rating]; ++i)
+        {
+            printf("%c", '*');
+        }
+        printf("\n");
+    }
 }
 
+int main()
+{
+    int frequency[FREQUENCY_SIZE] = { 0 };
+
+    int responses[RESPONSES_SIZE] = { 1, 2, 6, 4, 8, 5, 9, 7, 8, 10,
+         1, 6, 3, 8, 6, 10, 3, 8, 2, 7, 6, 5, 7, 6, 8, 6, 7, 5, 6, 6,
+         5, 6, 7, 5, 6, 4, 8, 6, 8, 10 };
+
+    for (int answer = 0; answer < RESPONSES_SIZE; ++answer)
+    {
+        ++frequency[responses[answer]];
+    }
+
+    print_result(frequency);
+}
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
 // 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
 
