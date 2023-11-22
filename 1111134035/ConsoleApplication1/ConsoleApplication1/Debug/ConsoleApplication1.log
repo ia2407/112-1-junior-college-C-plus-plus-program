@@ -1,0 +1,3 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\User\Desktop\1\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(40,5): error C2084: 函式 'int main(void)' 的主體已經被宣告了
+C:\Users\User\Desktop\1\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(13): message : 請參閱 'main' 之前的定義
