@@ -1,0 +1,6 @@
+﻿  1129-1.cpp
+C:\Users\User\Desktop\1129\1129-1\1129-1\1129-1.cpp(19,26): warning C4018: '<': signed/unsigned 不相符
+C:\Users\User\Desktop\1129\1129-1\1129-1\1129-1.cpp(27,26): warning C4018: '<': signed/unsigned 不相符
+C:\Users\User\Desktop\1129\1129-1\1129-1\1129-1.cpp(34,34): warning C4018: '<': signed/unsigned 不相符
+C:\Users\User\Desktop\1129\1129-1\1129-1\1129-1.cpp(36,30): warning C4018: '<': signed/unsigned 不相符
+  1129-1.vcxproj -> C:\Users\User\Desktop\1129\1129-1\Debug\1129-1.exe
