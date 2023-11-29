@@ -1,2 +1,4 @@
 ﻿  ConsoleApplication4.cpp
+C:\Users\User\source\repos\ConsoleApplication4\ConsoleApplication4.cpp(20,26): warning C4018: '<': signed/unsigned 不相符
+C:\Users\User\source\repos\ConsoleApplication4\ConsoleApplication4.cpp(31,26): warning C4018: '<': signed/unsigned 不相符
   ConsoleApplication4.vcxproj -> C:\Users\User\source\repos\ConsoleApplication4\Debug\ConsoleApplication4.exe
