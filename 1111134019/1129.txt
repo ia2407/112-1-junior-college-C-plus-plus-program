@@ -1,0 +1,12 @@
+﻿ConsoleApplication4.exe' (Win32): 已載入 'C:\Users\User\source\repos\ConsoleApplication4\Debug\ConsoleApplication4.exe'。已載入符號。
+ConsoleApplication4.exe' (Win32): 已載入 'C:\Windows\SysWOW64\ntdll.dll'。
+ConsoleApplication4.exe' (Win32): 已載入 'C:\Windows\SysWOW64\kernel32.dll'。
+ConsoleApplication4.exe' (Win32): 已載入 'C:\Windows\SysWOW64\KernelBase.dll'。
+ConsoleApplication4.exe' (Win32): 已載入 'C:\Windows\SysWOW64\vcruntime140d.dll'。
+ConsoleApplication4.exe' (Win32): 已載入 'C:\Windows\SysWOW64\ucrtbased.dll'。
+0x3da0 執行緒以返回碼 0 (0x0) 結束。
+ConsoleApplication4.exe' (Win32): 已載入 'C:\Windows\SysWOW64\kernel.appcore.dll'。
+ConsoleApplication4.exe' (Win32): 已載入 'C:\Windows\SysWOW64\msvcrt.dll'。
+0x30f0 執行緒以返回碼 0 (0x0) 結束。
+0x1378 執行緒以返回碼 0 (0x0) 結束。
+'[3232] ConsoleApplication4.exe' 程式以返回碼 0 (0x0) 結束。
