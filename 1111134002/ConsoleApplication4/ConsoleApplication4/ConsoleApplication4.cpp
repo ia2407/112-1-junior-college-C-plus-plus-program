@@ -1,53 +1,67 @@
-﻿// Fig. 6.7: fig06_07.c
-// Fig. 6.7: fig06_07.c
-// Analyzing a student poll.
+﻿// ConsoleApplication4.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
+//
+// Fig. 6.15: fig06_15.c
+// Sorting an array's values into ascending order.
 #include <stdio.h>
-#define RESPONSES_SIZE 40 // define array sizes
-#define FREQUENCY_SIZE 11
-
+#define SIZE 10
+void bubble(int arr[SIZE], unsigned int);
 // function main begins program execution
-void print_result(int frequency[FREQUENCY_SIZE]);
 int main(void)
 {
-    // initialize frequency counters to 0
-    int frequency[FREQUENCY_SIZE] = { 0 };
+    // initialize a
+    int a[SIZE],size,i;
 
-    // place the survey responses in the responses array
-    int responses[RESPONSES_SIZE] = { 1, 2, 6, 4, 8, 5, 9, 7, 8, 10,
-         1, 6, 3, 8, 6, 10, 3, 8, 2, 7, 6, 5, 7, 6, 8, 6, 7, 5, 6, 6,
-         5, 6, 7, 5, 6, 4, 8, 6, 8, 10 };
+    printf("你輸入幾個值?(不能超過10個)");
+    scanf_s("%d", &size);
+    for (i = 0; (i < size) && (i < SIZE); i++)   ////陣列是從0開始,所以如果從1開始,0的位子會被吃掉 ,不能打=會多給一個空格
+        scanf_s("%d",&a[i]);
+    puts("Data items in original order");
 
-    // for each answer, select value of an element of array responses
-    // and use that value as an index in array frequency to 
-    // determine element to increment
-    for (size_t answer = 0; answer < RESPONSES_SIZE; ++answer) {
-        ++frequency[responses[answer]];
+    // output original array
+    for (size_t i = 0; i < size; ++i) {
+        printf("%4d", a[i]);
     }
 
-    print_result(frequency);
+    // bubble sort                                         
+    // loop to control number of passes                    
+    bubble(a,size);
 
+    puts("\nData items in ascending order");
+
+    // output sorted array
+    for (size_t i = 0; i < size; ++i) {
+        printf("%4d", a[i]);
+    }
+
+    puts("");
 }
-void print_result(int frequency[FREQUENCY_SIZE])
+
+void bubble(int arr[SIZE], unsigned int size)
 {
-    int rating, i, j;
+    for (unsigned int pass = 1; pass < size; ++pass) {
 
-    printf("%s%17s\n", "Rating", "Frequency");
+        // loop to control number of comparisons per pass   
+        for (size_t i = 0; i < size - 1; ++i) {
 
-    // output the frequencies in a tabular format
-    for (rating = 1; rating < FREQUENCY_SIZE; ++rating) {
-        printf("%6d%17d\n", rating, frequency[rating]);
-    }
-
-    printf("%s%13s%17s\n", "Element", "Value", "Histogram");
-
-    // for each element of array n, output a bar of the histogram
-    for (i = 0; i < FREQUENCY_SIZE; ++i) {
-        printf("%7u%13d        ", i, frequency[i]);
-
-        for (j = 1; j <= frequency[i]; ++j) { // print one bar
-            printf("%c", '*');
+            // compare adjacent elements and swap them if first 
+            // element is greater than second element           
+            if (arr[i] > arr[i + 1]) {
+                int hold = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = hold;
+            }
         }
-
-        puts(""); // end a histogram bar with a newline
     }
+
 }
+
+// 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
+// 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
+
+// 開始使用的提示: 
+//   1. 使用 [方案總管] 視窗，新增/管理檔案
+//   2. 使用 [Team Explorer] 視窗，連線到原始檔控制
+//   3. 使用 [輸出] 視窗，參閱組建輸出與其他訊息
+//   4. 使用 [錯誤清單] 視窗，檢視錯誤
+//   5. 前往 [專案] > [新增項目]，建立新的程式碼檔案，或是前往 [專案] > [新增現有項目]，將現有程式碼檔案新增至專案
+//   6. 之後要再次開啟此專案時，請前往 [檔案] > [開啟] > [專案]，然後選取 .sln 檔案
