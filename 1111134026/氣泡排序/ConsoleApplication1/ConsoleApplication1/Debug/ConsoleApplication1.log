@@ -1,0 +1,4 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\User\Desktop\氣泡排序\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(33,38): warning C4018: '<': signed/unsigned 不相符
+C:\Users\User\Desktop\氣泡排序\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(37,30): warning C4018: '<': signed/unsigned 不相符
+  ConsoleApplication1.vcxproj -> C:\Users\User\Desktop\氣泡排序\ConsoleApplication1\Debug\ConsoleApplication1.exe
