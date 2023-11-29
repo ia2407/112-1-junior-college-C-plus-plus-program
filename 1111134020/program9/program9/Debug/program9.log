@@ -1,0 +1,4 @@
+﻿  program9.cpp
+C:\Users\User\source\repos\program9\program9\program9.cpp(32,26): warning C4018: '<': signed/unsigned 不相符
+C:\Users\User\source\repos\program9\program9\program9.cpp(45,27): warning C4018: '<': signed/unsigned 不相符
+  program9.vcxproj -> C:\Users\User\source\repos\program9\Debug\program9.exe
