@@ -2,46 +2,61 @@
 //
 
 #include <stdio.h>
-#define RESPONSES_SIZE 40 
-#define FREQUENCY_SIZE 11
+#define SIZE 10
+void bubble(int arr[SIZE],int size);
 
-void print_result(int freq[FREQUENCY_SIZE]);
 int main(void)
 {
-    
-    int frequency[FREQUENCY_SIZE] = { 0 };
 
-    int responses[RESPONSES_SIZE] = { 1, 2, 6, 4, 8, 5, 9, 7, 8, 10,
-         1, 6, 3, 8, 6, 10, 3, 8, 2, 7, 6, 5, 7, 6, 8, 6, 7, 5, 6, 6,
-         5, 6, 7, 5, 6, 4, 8, 6, 8, 10 };
+    int a[SIZE], size,i;                  //= { 2, 6, 4, 8, 10, 12, 89, 68, 45, 37 };
+    printf("你要輸入幾個值?");
+    scanf_s("%d", &size);
     
-    for (size_t answer = 0; answer < RESPONSES_SIZE; ++answer) {
-        ++frequency[responses[answer]];
-    }
-    print_result(frequency);
-}
-void print_result(int freq[FREQUENCY_SIZE])
-{
-    int rating,i,j;
-    printf("%s%17s\n", "Rating", "Frequency");
-    for (size_t rating = 1; rating < FREQUENCY_SIZE; ++rating)
+    for (i = 0; (i < size) && (i <= SIZE); i++)
+        scanf_s("%d",&a[i]);
+    
+
+    puts("Data items in original order");
+
+    for (size_t i = 0; i < size; ++i)
     {
-        printf("%6d%17d\n", rating, freq[rating]);
-
+        printf("%4d", a[i]);
     }
-    printf("%s%13s%17s\n", "Element", "Value", "Histogram");
-    for (size_t i = 1; i < FREQUENCY_SIZE; ++i) {
-        printf("%7u%13d        ", i, freq[i]);
 
-        for (int j = 1; j <= freq[i]; ++j) { // print one bar
-            printf("%c", '*');
+    bubble(a, size);
+
+    puts("\nData items in ascending order");
+
+
+    for (int x = 0; x < size; ++x) {
+        printf("%4d", a[x]);
+    }
+
+    puts("");
+}
+void bubble(int arr[SIZE], int size)
+{
+    for (unsigned int pass = 1; pass < size; ++pass) {
+
+
+        for (size_t i = 0; i < size - 1; ++i) {
+
+        
+            if (arr[i] > arr[i + 1]) {
+                int hold = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = hold;
+            }
         }
-
-        puts(""); // end a histogram bar with a newline
     }
 }
 
-   
+
+
+
+
+
+
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
 // 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
