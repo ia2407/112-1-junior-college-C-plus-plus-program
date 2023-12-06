@@ -1,0 +1,4 @@
+﻿  11.1.1.cpp
+C:\Users\User\Desktop\11.1.1\11.1.1\11.1.1.cpp(30,17): warning C4474: 'scanf_s': 傳遞給格式字串的引數太多
+C:\Users\User\Desktop\11.1.1\11.1.1\11.1.1.cpp(30,17): message : 預留位置及其參數需要 0 個 variadic 引數，但卻提供了 1 個
+  11.1.1.vcxproj -> C:\Users\User\Desktop\11.1.1\Debug\11.1.1.exe
