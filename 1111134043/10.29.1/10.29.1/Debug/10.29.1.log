@@ -1,0 +1,4 @@
+﻿  10.29.1.cpp
+C:\Users\User\Desktop\10.29.1\10.29.1\10.29.1.cpp(77,9): warning C4101: 'i': 未參考的區域變數
+C:\Users\User\Desktop\10.29.1\10.29.1\10.29.1.cpp(77,12): warning C4101: 'n': 未參考的區域變數
+  10.29.1.vcxproj -> C:\Users\User\Desktop\10.29.1\Debug\10.29.1.exe
