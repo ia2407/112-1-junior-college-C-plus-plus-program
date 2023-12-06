@@ -1,0 +1,3 @@
+﻿  10.18.2.cpp
+C:\Users\User\Desktop\10.18.2\10.18.2\10.18.2.cpp(27,19): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+  10.18.2.vcxproj -> C:\Users\User\Desktop\10.18.2\Debug\10.18.2.exe
