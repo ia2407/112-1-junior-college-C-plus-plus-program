@@ -1,0 +1,84 @@
+﻿// 1111134011.12.6.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
+//
+
+#include <iostream>
+#include <stdio.h>
+
+// 排序副程式
+void bubbleSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                // 交換元素
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+
+// 二元搜尋副程式
+int binarySearch(int arr[], int low, int high, int key) {
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+
+        if (arr[mid] == key)
+            return mid;
+
+        if (arr[mid] < key)
+            low = mid + 1;
+        else
+            high = mid - 1;
+    }
+
+    return -1; // 找不到
+}
+
+int main() {
+    int arr[10];
+
+    // 輸入學生學號
+    printf("請輸入10位學生學號：\n");
+    for (int i = 0; i < 10; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // 排序
+    bubbleSort(arr, 10);
+
+    // 印出排序後的結果
+    printf("排序後的結果：\n");
+    for (int i = 0; i < 10; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    // 輸入欲查找的值
+    int key;
+    printf("請輸入欲查找的值：\n");
+    scanf("%d", &key);
+
+    // 二元搜尋
+    int result = binarySearch(arr, 0, 9, key);
+
+    // 印出結果
+    if (result != -1) {
+        printf("找到值 %d 在陣列中的位置：%d\n", key, result);
+    }
+    else {
+        printf("找不到\n");
+    }
+
+    return 0;
+}
+// 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
+// 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
+
+// 開始使用的提示: 
+//   1. 使用 [方案總管] 視窗，新增/管理檔案
+//   2. 使用 [Team Explorer] 視窗，連線到原始檔控制
+//   3. 使用 [輸出] 視窗，參閱組建輸出與其他訊息
+//   4. 使用 [錯誤清單] 視窗，檢視錯誤
+//   5. 前往 [專案] > [新增項目]，建立新的程式碼檔案，或是前往 [專案] > [新增現有項目]，將現有程式碼檔案新增至專案
+//   6. 之後要再次開啟此專案時，請前往 [檔案] > [開啟] > [專案]，然後選取 .sln 檔案
