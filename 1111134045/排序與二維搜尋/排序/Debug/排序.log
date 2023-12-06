@@ -1,0 +1,6 @@
+﻿  排序.cpp
+C:\Users\User\Downloads\folder\排序\排序.cpp(24,34): warning C4018: '<': signed/unsigned 不相符
+C:\Users\User\Downloads\folder\排序\排序.cpp(29,34): warning C4018: '<': signed/unsigned 不相符
+C:\Users\User\Downloads\folder\排序\排序.cpp(55,38): warning C4018: '<': signed/unsigned 不相符
+C:\Users\User\Downloads\folder\排序\排序.cpp(56,30): warning C4018: '<': signed/unsigned 不相符
+  排序.vcxproj -> C:\Users\User\Downloads\folder\Debug\排序.exe
