@@ -1,55 +1,81 @@
-﻿// Fig. 6.15: fig06_15.c
-// Sorting an array's values into ascending order.
-#include <stdio.h>
+﻿#include <stdio.h>
 #define SIZE 10
 
+// function main begins program execution
+int binarySearch(const int b[], int searchKey, int low, int high);
+void bubble(int array[SIZE]);
+int main(void)
+{
 
-void  bubble(int arr[SIZE], unsigned int size);
+    int a[SIZE], key = 1, result;
+    puts("輸10個數");
 
-void  bubble(int arr[SIZE], unsigned int size) {
- // bubble sort                                         
-    // loop to control number of passes                    
-    for (unsigned int pass = 1; pass < size; ++pass) {
+    for (int i = 0; i < SIZE; ++i) {
+        printf("請輸入第%d個整數", i + 1);
+        scanf_s("%d", &a[i]);
+    }
+    bubble(a);
+    puts("\nData items in ascending order");
 
-        // loop to control number of comparisons per pass   
-        for (int i = 0; i < size - 1; ++i) {
+    for (int i = 0; i < SIZE; ++i) {
+        printf("%4d", a[i]);
+    }
+    puts("");
+    while (key != -1)
+    {
+        printf("\n搜尋的數");
+        scanf_s("%d", &key);
+        result = binarySearch(a, key, 0, SIZE - 1);
+        if (result != -1) {
+            printf("你找的%d在a[]中第%d個", key, result + 1);
+        }
+        else
+        {
+            printf("你找的%d不在a[]", key);
+        }
+    }
+}
 
-            // compare adjacent elements and swap them if first 
-            // element is greater than second element           
-            if (arr[i] > arr[i + 1]) {
-                int hold = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i + 1] = hold;
+void bubble(int array[SIZE])
+{
+    unsigned int pass;
+
+    for (unsigned int pass = 1; pass < SIZE; ++pass) {
+
+
+        for (int i = 0; i < SIZE - 1; ++i) {
+
+            if (array[i] > array[i + 1]) {
+                int hold = array[i];
+                array[i] = array[i + 1];
+                array[i + 1] = hold;
             }
         }
     }
 }
-// function main begins program execution
-int main(void)
+int binarySearch(const int b[], int searchKey, int low, int high)
 {
-    // initialize a
-    int a[SIZE],size;
+
+    while (low <= high) {
 
 
-    printf("輸入要得值");
-    scanf_s("%d", &size);
-    
-    for (int i = 0; (i < size) && (i < SIZE); ++i) {
-         scanf_s("%d", &a[i]);
-     }
-       
-    bubble(a, size);
-  
-     
+        int middle = (low + high) / 2;
 
-    puts("\nData items in ascending order");
-   
-    // output sorted array
-    for (int i = 0; i < size; ++i) {
-        printf("%4d", a[i]);
+
+
+        if (searchKey == b[middle]) {
+            return middle;
+        }
+
+
+        else if (searchKey < b[middle]) {
+            high = middle - 1;
+        }
+
+
+        else {
+            low = middle + 1;
+        }
     }
-
-    puts("");
+    return -1;
 }
-
-
