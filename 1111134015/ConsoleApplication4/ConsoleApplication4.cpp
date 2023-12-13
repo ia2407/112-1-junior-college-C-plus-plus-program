@@ -1,69 +1,67 @@
 ﻿#include <stdio.h>
+#define SIZE 10
 
-// 排序副程式
-void bubbleSort(int arr[], int n) {
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                // 交換元素
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+// function main begins program execution
+void bubble(int array[][4]);
+void swap(int* a, int* b);
+int main(void)
+{
+    // initialize a
+    int a[SIZE][4] = { {1,66,77,0},{2,88,93,0},{3,67,87,0},
+        {4,76,93,0},{5,86,71,0},{6,77,72,0},{7,93,88,0},
+        {8,54,98,0},{9,56,96,0},{10,59,61,0} };
+
+    // output original array
+    for (size_t i = 0; i < SIZE; ++i) {
+        a[i][3] = (a[i][1] + a[i][2] / 2);
+    }
+    bubble(a);
+    // output sorted array
+    printf("%4s %4s %4s %4s", "學號", "數學", "計概", "平均");
+    for (size_t i = 0; i < SIZE; ++i) {
+        printf("\n%4d %4d %4d %4d", a[i][0], a[i][1], a[i][2], a[i][3]);
+    }
+    puts("");
+}
+
+void bubble(int array[][4])
+{
+    unsigned int pass;
+    // bubble sort                                         
+    // loop to control number of passes                    
+    for (unsigned int pass = 1; pass < SIZE; ++pass) {
+
+        // loop to control number of comparisons per pass   
+        for (size_t i = 0; i < SIZE - 1; ++i) {
+            // compare adjacent elements and swap them if first 
+            // element is greater than second element           
+            if (array[i][3] < array[i + 1][3]) {
+                swap(&array[i][0], &array[i + 1][0]);
+                swap(&array[i][1], &array[i + 1][1]);
+                swap(&array[i][2], &array[i + 1][2]);
+                swap(&array[i][3], &array[i + 1][3]);
+                /*int hold = array[i][0];
+                array[i][0] = array[i + 1][0];
+                array[i + 1][0] = hold;
+                hold = array[i][1];
+                array[i][1] = array[i + 1][1];
+                array[i + 1][1] = hold;
+                hold = array[i][2];
+                array[i][2] = array[i + 1][2];
+                array[i + 1][2] = hold;
+                hold = array[i][3];
+                array[i][3] = array[i + 1][3];
+                array[i + 1][3] = hold;*/
+
             }
         }
     }
 }
-
-// 二元搜尋副程式
-int binarySearch(int arr[], int low, int high, int key) {
-    while (low <= high) {
-        int mid = low + (high - low) / 2;
-
-        if (arr[mid] == key)
-            return mid;
-
-        if (arr[mid] < key)
-            low = mid + 1;
-        else
-            high = mid - 1;
-    }
-
-    return -1; // 找不到
+void swap(int* a, int* b)
+{
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
 }
-
-int main() {
-    int arr[10];
-    // 輸入數字
-    printf("請輸入10個數字：\n");
-    for (int i = 0; i < 10; i++) {
-        scanf_s("%d", &arr[i]);
-    }
-
-    // 排序
-    bubbleSort(arr, 10);
-
-    // 印出排序後的結果
-    printf("排序後的結果：\n");
-    for (int i = 0; i < 10; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
-
-    // 輸入欲查找的值
-    int key;
-    printf("請輸入欲查找的值：\n");
-    scanf_s("%d", &key);
-
-    // 二元搜尋
-    int result = binarySearch(arr, 0, 9, key);
-
-    // 印出結果
-    if (result != -1) {
-        printf("找到值 %d 在陣列中的位置：%d\n", key, result);
-    }
-    else {
-        printf("找不到\n");
-    }
-
-    return 0;
-}
+            
