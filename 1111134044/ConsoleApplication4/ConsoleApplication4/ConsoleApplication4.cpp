@@ -1,96 +1,82 @@
 ﻿#include <stdio.h>
 #define SIZE 10
 
-
-void bubble(int array[SIZE]);
-int binarySearch( int b[], int searchKey, int low, int high);
+void swap(int* x, int* y);
+void bubble(int array[][4]);
 int main(void)
 {
     
-    int a[SIZE], key=1,result;
+    int a[SIZE][4] = 
+      { {1,77,60,0},
+        {2,78,61,0},
+        {3,79,62,0},
+        {4,80,63,0},
+        {5,81,64,0},
+        {6,82,65,0},
+        {7,83,66,0},
+        {8,84,67,0},
+        {9,85,68,0},
+        {10,86,69,0}};
     puts("Data items in original order");
     
-    for (int i = 0; i < SIZE; ++i) {
-        printf("請輸入第%d個整數", i + 1);
-        scanf_s("%d", &a[i]);
+    for (size_t i = 0; i < SIZE; ++i) {
+        a[i][3]=(a[i][1]+a[i][2])/2;
     }
+
     bubble(a);
     puts("\nData items in ascending order");
-    
-    for (int i = 0; i < SIZE; ++i) {
-        printf("%4d", a[i]);
+   
+    printf("\n%4s %4s %4s %4s", "學號", "數學", "計概", "平均");
+    for (size_t i = 0; i < SIZE; ++i)
+    {
+        printf("\n%4d %4d %4d %4d", a[i][0], a[i][1], a[i][2], a[i][3]);
     }
     puts("");
-
-    while (key!=0)
-    {
-        printf("\n請輸入你要搜尋的整數");
-        scanf_s("%d", &key);
-        result = binarySearch(a, key, 0, SIZE - 1);
-        if (result != -1)
-        {
-            printf("你要找的%d在陣列a[]中第%d個元素", key, result);
-        }
-        else
-        {
-            printf("你要找的%d不在陣列a[]中", key);
-        }
-    }
-   
-
 }
 
-
-
-int binarySearch( int b[], int searchKey, int low, int high)
+void bubble(int array[][4])
 {
-    
-    while (low <= high) {
-
-        
-        int middle = (low + high) / 2;
-
-        
-        if (searchKey == b[middle]) 
-        {
-            return middle;
-        }
-
-        
-        else if (searchKey < b[middle])
-        {
-            high = middle - 1; 
-        }
-
-        
-        else
-        {
-            low = middle + 1;        
-        }
-    } 
-
-    return -1; 
-}
 
 
 
-
-void bubble(int array[SIZE])
-{
     unsigned int pass;
-    // bubble sort                                         
-    // loop to control number of passes                    
+                      
     for (unsigned int pass = 1; pass < SIZE; ++pass) {
 
-        // loop to control number of comparisons per pass   
-        for (int i = 0; i < SIZE - 1; ++i) {
-            // compare adjacent elements and swap them if first 
-            // element is greater than second element           
-            if (array[i] > array[i + 1]) {
-                int hold = array[i];
-                array[i] = array[i + 1];
-                array[i + 1] = hold;
+          
+        for (size_t i = 0; i < SIZE - 1; ++i) {
+                     
+            if (array[i][3] < array[i + 1][3]) 
+            {
+                swap(&array[i][0], &array[i+1][0]);
+                swap(&array[i][1], &array[i+1][1]);
+                swap(&array[i][2], &array[i+1][2]);
+                swap(&array[i][3], &array[i+1][3]);
+
+              /* int hold = array[i][0];
+                array[i][0] = array[i + 1][0];
+                array[i + 1][0] = hold;
+
+                 hold = array[i][1];
+                array[i][1] = array[i + 1][1];
+                array[i + 1][1] = hold;
+
+                 hold = array[i][0];
+                array[i][2] = array[i + 1][2];
+                array[i + 1][2] = hold;
+
+                 hold = array[i][3];
+                array[i][3] = array[i + 1][3];
+                array[i + 1][3] = hold;*/
             }
         }
     }
+}
+
+void swap(int* x, int* y)
+{
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+
 }
