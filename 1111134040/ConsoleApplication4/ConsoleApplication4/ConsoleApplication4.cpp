@@ -1,73 +1,56 @@
-﻿// ConsoleApplication4.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
-//
-
+﻿#include <stdio.h>
 #include <stdio.h>
+#define SIZE 10
 
-// 排序副程式
-void bubbleSort(int SIZE[], int n) {
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
-            if (SIZE[j] > SIZE[j + 1]) {
-                // 交換元素
-                int temp = SIZE[j];
-                SIZE[j] = SIZE[j + 1];
-                SIZE[j + 1] = temp;
+// function main begins program execution
+void bubble(int array[SIZE][4]);
+int main(void)
+{
+    // initialize a
+    int a[SIZE][4] = { {1,60,80,0},{2,70,80,0} ,{3,88,80,0},{4,90,82,0},{5,62,64,0},{6,40,80,0},{7,96,70,0},{8,65,85,0},{9,90,60,0},{10,100,96,0} };
+    puts("Data items in original order");
+    // output original array
+    for (size_t i = 0; i < SIZE; ++i)
+    {
+        a[i][3] = (a[i][1] + a[i][2]) / 2;
+    }
+    bubble(a);
+    puts("\nData items in ascending order");
+    // output sorted array
+    printf("\n%4s %4s %4s %4s", "學號", "數學", "計概", "平均");
+    for (size_t i = 0; i < SIZE; ++i) {
+        printf("\n%4d %4d %4d %4d", a[i][0], a[i][1], a[i][2], a[i][3]);
+    }
+    puts("");
+}
+
+void bubble(int array[SIZE][4])
+{
+    unsigned int pass;
+    // bubble sort                                         
+    // loop to control number of passes                    
+    for (unsigned int pass = 1; pass < SIZE; ++pass) {
+
+        // loop to control number of comparisons per pass   
+        for (size_t i = 0; i < SIZE - 1; ++i) {
+            array[i][3] = (array[i][1] + array[i][2]) / 2;
+            if (array[i][3] < array[i + 1][3]) {
+                int hold = array[i][0];
+                array[i][0] = array[i + 1][0];
+                array[i + 1][0] = hold;
+
+                hold = array[i][1];
+                array[i][1] = array[i + 1][1];
+                array[i + 1][1] = hold;
+
+                hold = array[i][2];
+                array[i][2] = array[i + 1][2];
+                array[i + 1][2] = hold;
+
+                hold = array[i][3];
+                array[i][3] = array[i + 1][3];
+                array[i + 1][3] = hold;
             }
         }
     }
-}
-
-// 二元搜尋副程式
-int binarySearch(int SIZE[], int low, int high, int key) {
-    while (low <= high) {
-        int mid = low + (high - low) / 2;
-
-        if (SIZE[mid] == key)
-            return mid;
-
-        if (SIZE[mid] < key)
-            low = mid + 1;
-        else
-            high = mid - 1;
-    }
-
-    return -1; // 找不到
-}
-
-int main() {
-    int SIZE[10];
-
-    // 輸入學生學號
-    printf("請輸入10位學生學號：\n");
-    for (int i = 0; i < 10; i++) {
-        scanf_s("%d", &SIZE[i]);
-    }
-
-    // 排序
-    bubbleSort(SIZE, 10);
-
-    // 印出排序後的結果
-    printf("排序後的結果：\n");
-    for (int i = 0; i < 10; i++) {
-        printf("%d ", SIZE[i]);
-    }
-    printf("\n");
-
-    // 輸入欲查找的值
-    int key;
-    printf("請輸入欲查找的值：\n");
-    scanf_s("%d", &key);
-
-    // 二元搜尋
-    int result = binarySearch(SIZE, 0, 9, key);
-
-    // 印出結果
-    if (result != -1) {
-        printf("找到值 %d 在陣列中的位置：%d\n", key, result);
-    }
-    else {
-        printf("找不到\n");
-    }
-
-    return 0;
 }
