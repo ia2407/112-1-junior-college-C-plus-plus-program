@@ -1,0 +1,4 @@
+﻿  ConsoleApplication1.cpp
+E:\2上期末c++\二維陣列\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(27,18): warning C4101: 'pass': 未參考的區域變數
+  LINK : 最後的累加連結找不到或未建置 E:\2上期末c++\二維陣列\ConsoleApplication1\Debug\ConsoleApplication1.exe，正在執行完整連結
+  ConsoleApplication1.vcxproj -> E:\2上期末c++\二維陣列\ConsoleApplication1\Debug\ConsoleApplication1.exe
