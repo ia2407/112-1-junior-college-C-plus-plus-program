@@ -1,81 +1,54 @@
 ﻿#include <stdio.h>
 #define SIZE 10
 
-// function main begins program execution
-int binarySearch(const int b[], int searchKey, int low, int high);
-void bubble(int array[SIZE]);
+
+void bubble(int array[][4]);
+int hold;
 int main(void)
 {
 
-    int a[SIZE], key = 1, result;
-    puts("輸10個數");
+    int a[SIZE][4] = { {1,95,75,45},{2,93,81,38},{3,100,45,15},{4,78,75,72},{5,94,55,27},{6,14,5,86},{7,17,99,47},{8,100,81,37},{9,83,66,93},{10,93,54} };
+    puts("Data items in original order");
 
-    for (int i = 0; i < SIZE; ++i) {
-        printf("請輸入第%d個整數", i + 1);
-        scanf_s("%d", &a[i]);
+    for (size_t i = 0; i < SIZE; ++i) {
+        a[i][3] = (a[i][1] + a[i][2]) / 2;
+    
     }
     bubble(a);
     puts("\nData items in ascending order");
+    printf("\n%4s %4s %4s %4s","學號","數學","計慨","平均");
 
-    for (int i = 0; i < SIZE; ++i) {
-        printf("%4d", a[i]);
+    for (size_t i = 0; i < SIZE; ++i) {
+        printf("\n%4d %4d %4d %4d", a[i][0], a[i][1], a[i][2], a[i][3]);
     }
     puts("");
-    while (key != -1)
-    {
-        printf("\n搜尋的數");
-        scanf_s("%d", &key);
-        result = binarySearch(a, key, 0, SIZE - 1);
-        if (result != -1) {
-            printf("你找的%d在a[]中第%d個", key, result + 1);
-        }
-        else
-        {
-            printf("你找的%d不在a[]", key);
-        }
-    }
 }
 
-void bubble(int array[SIZE])
+void bubble(int array[SIZE][4])
 {
     unsigned int pass;
-
+                   
     for (unsigned int pass = 1; pass < SIZE; ++pass) {
+  
+        for (size_t i = 0; i < SIZE - 1; ++i) {           
+            if (array[i][3] < array[i + 1][3]) {
 
+                 hold = array[i][0];
+                array[i][0] = array[i + 1][0];
+                array[i + 1][0] = hold;
 
-        for (int i = 0; i < SIZE - 1; ++i) {
+                hold = array[i][1];
+                array[i][1] = array[i + 1][1];
+                array[i + 1][1] = hold;
 
-            if (array[i] > array[i + 1]) {
-                int hold = array[i];
-                array[i] = array[i + 1];
-                array[i + 1] = hold;
+                hold = array[i][2];
+                array[i][2] = array[i + 1][2];
+                array[i + 1][2] = hold;
+
+                hold = array[i][3];
+                array[i][3] = array[i + 1][3];
+                array[i + 1][3] = hold;
             }
         }
     }
-}
-int binarySearch(const int b[], int searchKey, int low, int high)
-{
-
-    while (low <= high) {
-
-
-        int middle = (low + high) / 2;
-
-
-
-        if (searchKey == b[middle]) {
-            return middle;
-        }
-
-
-        else if (searchKey < b[middle]) {
-            high = middle - 1;
-        }
-
-
-        else {
-            low = middle + 1;
-        }
-    }
-    return -1;
 }
