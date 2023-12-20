@@ -1,3 +1,3 @@
 ﻿  ConsoleApplication4.cpp
-C:\Users\User\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(42,18): warning C4101: 'pass': 未參考的區域變數
+C:\Users\User\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(20,17): warning C4477: 'scanf_s' : 格式字串 '%d' 需要 'int *' 類型的引數，但 variadic 引數 1 的類型為 'const char **'
   ConsoleApplication4.vcxproj -> C:\Users\User\source\repos\ConsoleApplication4\Debug\ConsoleApplication4.exe
