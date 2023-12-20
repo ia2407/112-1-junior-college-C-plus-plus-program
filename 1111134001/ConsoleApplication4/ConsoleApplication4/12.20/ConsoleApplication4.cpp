@@ -16,8 +16,8 @@ int main(void)
     {9,77,55,0}, {10,97,68,0} };
     int i, chose=0 ;
     //int a[SIZE] = { 96, 64, 45, 81, 100, 12, 89, 68, 77, 47 };
-    printf("請輸入名字\n");
-    scanf_s("%d");
+    printf("\n請告訴我您要遞增(1)還是遞減(2)排序?");
+    scanf_s("%d", &chose);
     const char* name[SIZE] = { };
     //puts("Data items in original order");
     // output original array
