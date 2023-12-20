@@ -1,0 +1,6 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\User\Desktop\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(24,17): warning C4473: 'scanf_s' : 傳遞給格式字串的引數不足
+C:\Users\User\Desktop\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(24,17): message : 預留位置及其參數需要 2 個 variadic 引數，但卻提供了 0 個
+C:\Users\User\Desktop\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(24,17): message : 缺少 variadic 引數 1 (其為格式字串 '%s' 所需)
+C:\Users\User\Desktop\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(24,17): message : 此引數可用為轉換規範
+  ConsoleApplication1.vcxproj -> C:\Users\User\Desktop\ConsoleApplication1\Debug\ConsoleApplication1.exe
