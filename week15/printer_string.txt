@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+ int count = 0;
+ char str1[] = "Hello World!";
+ char str2[20];
+ char* ptr, * ptr1;
+
+ ptr = str1;
+ ptr1 = str2;
+ while (*ptr != '\0')
+ {
+  *ptr1 = *ptr;
+  ptr++;
+  ptr1++;
+  count++;
+ }
+
+ printf("字串複製的長度為%d", count);
+
+}
