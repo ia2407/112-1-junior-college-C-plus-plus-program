@@ -1,67 +1,87 @@
 ﻿#include <stdio.h>
-#define SIZE 10
+#include <string.h>
+#define SIZE 10   //學生人數
+#define EXAM 4      //每個學生的資料、成績
 
 // function main begins program execution
-void bubble(int array[][4]);
-void swap(int* a, int* b);
+void bubble(int array[][EXAM], const char* name[SIZE], int (*fptr)(int a, int b));
+int INC(int a, int b);
+int DEC(int a, int b);
+void swap(int* d1ptr, int* d2ptr);
 int main(void)
 {
     // initialize a
-    int a[SIZE][4] = { {1,66,77,0},{2,88,93,0},{3,67,87,0},
-        {4,76,93,0},{5,86,71,0},{6,77,72,0},{7,93,88,0},
-        {8,54,98,0},{9,56,96,0},{10,59,61,0} };
-
+    int studentGrade[SIZE][EXAM] = { {1,74,55,0},{2,56,88,0}, {3,84,11,0},
+    {4,88,52,0}, {5,100,100,0}, {6,0,0,0}, {7,51,81,0}, {8,74,14,0},
+    {9,77,55,0}, {10,97,68,0} };
+    int i, chose;
+    //int a[SIZE] = { 96, 64, 45, 81, 100, 12, 89, 68, 77, 47 };
+    const char* name[SIZE] = { "Danny","Jerry","Tom","Sue","Mary","John","Mark","Nina","Apple","Juice" };
+    puts("Data items in original order");
     // output original array
-    for (size_t i = 0; i < SIZE; ++i) {
-        a[i][3] = (a[i][1] + a[i][2] / 2);
+    for (i = 0; i < SIZE; ++i) {//計算平均
+        studentGrade[i][3] = (studentGrade[i][1] + studentGrade[i][2]) / 2;
     }
-    bubble(a);
-    // output sorted array
-    printf("%4s %4s %4s %4s", "學號", "數學", "計概", "平均");
-    for (size_t i = 0; i < SIZE; ++i) {
-        printf("\n%4d %4d %4d %4d", a[i][0], a[i][1], a[i][2], a[i][3]);
+
+    printf("%10s  %5s %5s %5s %5s\n", "Name", "ID", "Math", "Compu", "Avg");
+
+    for (i = 0; i < SIZE; ++i) {
+        printf("%10s  %5d %5d %5d %5d", name[i], studentGrade[i][0], studentGrade[i][1], studentGrade[i][2], studentGrade[i][3]);
+        printf("\n");
+    }
+
+    printf("\n 請告訴我你是遞增(1)還是遞減(2)排序?");
+    scanf_s("%d", &chose);
+    if (chose == 1)
+        bubble(studentGrade, name, INC);
+    else if (chose == 2)
+        bubble(studentGrade, name, DEC);
+
+    puts("\nData items in ascending order");
+    printf("%10s  %5s %5s %5s %5s\n", "Name", "ID", "Math", "Compu", "Avg");
+
+    for (i = 0; i < SIZE; ++i) {
+        printf("%10s  %5d %5d %5d %5d", name[i], studentGrade[i][0], studentGrade[i][1], studentGrade[i][2], studentGrade[i][3]);
+        printf("\n");
     }
     puts("");
 }
-
-void bubble(int array[][4])
+int INC(int a, int b)
 {
-    unsigned int pass;
+    return a > b;
+}
+int DEC(int a, int b)
+{
+    return a < b;
+}
+
+void bubble(int array[][EXAM], const char* name[SIZE], int (*fptr)(int a, int b))
+{
+    const char* temp;
+    unsigned int pass, i;
     // bubble sort                                         
     // loop to control number of passes                    
-    for (unsigned int pass = 1; pass < SIZE; ++pass) {
+    for (pass = 0; pass < SIZE; ++pass) {
 
         // loop to control number of comparisons per pass   
-        for (size_t i = 0; i < SIZE - 1; ++i) {
+        for (i = 0; i < SIZE - 1; ++i) {
             // compare adjacent elements and swap them if first 
             // element is greater than second element           
-            if (array[i][3] < array[i + 1][3]) {
+            if ((*fptr)(array[i][3], array[i + 1][3])) {
                 swap(&array[i][0], &array[i + 1][0]);
                 swap(&array[i][1], &array[i + 1][1]);
                 swap(&array[i][2], &array[i + 1][2]);
                 swap(&array[i][3], &array[i + 1][3]);
-                /*int hold = array[i][0];
-                array[i][0] = array[i + 1][0];
-                array[i + 1][0] = hold;
-                hold = array[i][1];
-                array[i][1] = array[i + 1][1];
-                array[i + 1][1] = hold;
-                hold = array[i][2];
-                array[i][2] = array[i + 1][2];
-                array[i + 1][2] = hold;
-                hold = array[i][3];
-                array[i][3] = array[i + 1][3];
-                array[i + 1][3] = hold;*/
-
+                temp = name[i];
+                name[i] = name[i + 1];
+                name[i + 1] = temp;
             }
         }
     }
 }
-void swap(int* a, int* b)
+void swap(int* d1ptr, int* d2ptr)
 {
-    int temp;
-    temp = *a;
-    *a = *b;
-    *b = temp;
+    int hold = *d1ptr;
+    *d1ptr = *d2ptr;
+    *d2ptr = hold;
 }
-            
