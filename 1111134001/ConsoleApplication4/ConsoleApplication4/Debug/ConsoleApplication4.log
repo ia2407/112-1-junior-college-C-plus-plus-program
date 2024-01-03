@@ -1,5 +1,3 @@
 ﻿  ConsoleApplication4.cpp
-C:\Users\User\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(20,13): warning C4473: 'scanf_s' : 傳遞給格式字串的引數不足
-C:\Users\User\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(20,13): message : 預留位置及其參數需要 1 個 variadic 引數，但卻提供了 0 個
-C:\Users\User\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(20,13): message : 缺少 variadic 引數 1 (其為格式字串 '%d' 所需)
+C:\Users\User\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(18,26): warning C4101: 'tempStu': 未參考的區域變數
   ConsoleApplication4.vcxproj -> C:\Users\User\source\repos\ConsoleApplication4\Debug\ConsoleApplication4.exe
