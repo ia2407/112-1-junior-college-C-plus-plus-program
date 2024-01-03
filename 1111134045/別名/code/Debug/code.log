@@ -1,0 +1,3 @@
+﻿  code.cpp
+C:\Users\User\source\repos\code\code\code.cpp(16,33): warning C4101: 'tempStu': 未參考的區域變數
+  code.vcxproj -> C:\Users\User\source\repos\code\Debug\code.exe
