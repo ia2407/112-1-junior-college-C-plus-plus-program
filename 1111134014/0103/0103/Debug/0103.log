@@ -1,0 +1,4 @@
+﻿  0103.cpp
+C:\Users\User\Desktop\0103\0103\0103.cpp(28,17): warning C4477: 'scanf_s' : 格式字串 '%s' 需要 'char *' 類型的引數，但 variadic 引數 1 的類型為 'const char *'
+C:\Users\User\Desktop\0103\0103\0103.cpp(28,17): message : 此引數可用為轉換規範
+  0103.vcxproj -> C:\Users\User\Desktop\0103\Debug\0103.exe
