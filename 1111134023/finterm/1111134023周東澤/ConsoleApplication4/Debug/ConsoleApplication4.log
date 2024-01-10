@@ -1,0 +1,5 @@
+﻿  ConsoleApplication4.cpp
+C:\Users\User\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(44,18): error C2664: 'void bubble(st_stu [])': 無法將引數 1 從 'stu [10]' 轉換為 'st_stu []'
+C:\Users\User\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(44,12): message : 指向的類型沒有相關; 轉換必須有 reinterpret_cast、C-Style 轉換或函式樣式轉換
+C:\Users\User\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(14,8): message : 請參閱 'bubble' 的宣告
+C:\Users\User\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(47,16): warning C4477: 'printf' : 格式字串 '%5d' 需要 'int' 類型的引數，但 variadic 引數 5 的類型為 'double'
