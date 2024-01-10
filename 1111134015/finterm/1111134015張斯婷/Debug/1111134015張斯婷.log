@@ -1,0 +1,12 @@
+﻿  1111134015張斯婷.cpp
+C:\Users\User\source\repos\1111134015張斯婷\1111134015張斯婷.cpp(30,16): warning C4475: 'printf' : 長度修飾元 'I' 不得與格式規範中的類型欄位字元 'f' 搭配使用
+C:\Users\User\source\repos\1111134015張斯婷\1111134015張斯婷.cpp(34,18): error C2664: 'void bubble(st_stu [])': 無法將引數 1 從 'stu [10]' 轉換為 'st_stu []'
+C:\Users\User\source\repos\1111134015張斯婷\1111134015張斯婷.cpp(34,12): message : 指向的類型沒有相關; 轉換必須有 reinterpret_cast、C-Style 轉換或函式樣式轉換
+C:\Users\User\source\repos\1111134015張斯婷\1111134015張斯婷.cpp(10,6): message : 請參閱 'bubble' 的宣告
+C:\Users\User\source\repos\1111134015張斯婷\1111134015張斯婷.cpp(38,16): warning C4475: 'printf' : 長度修飾元 'I' 不得與格式規範中的類型欄位字元 'f' 搭配使用
+C:\Users\User\source\repos\1111134015張斯婷\1111134015張斯婷.cpp(42,10): error C2601: 'copy2': 區域函式定義不合法
+C:\Users\User\source\repos\1111134015張斯婷\1111134015張斯婷.cpp(13): message : 此行包含沒有相對應符號的 '{'
+C:\Users\User\source\repos\1111134015張斯婷\1111134015張斯婷.cpp(48,39): error C2143: 語法錯誤: 遺漏 ']' (在 ')' 之前)
+C:\Users\User\source\repos\1111134015張斯婷\1111134015張斯婷.cpp(48,10): error C2601: 'bobble': 區域函式定義不合法
+C:\Users\User\source\repos\1111134015張斯婷\1111134015張斯婷.cpp(13): message : 此行包含沒有相對應符號的 '{'
+C:\Users\User\source\repos\1111134015張斯婷\1111134015張斯婷.cpp(54): fatal error C1075: '{': 找不到任何相符的語彙基元
