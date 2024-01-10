@@ -1,0 +1,4 @@
+﻿  0110-1.cpp
+C:\Users\User\source\repos\0110-1\0110-1\0110-1.cpp(28,22): warning C4101: 'tempStu': 未參考的區域變數
+C:\Users\User\source\repos\0110-1\0110-1\0110-1.cpp(28,9): warning C4101: 'myStu': 未參考的區域變數
+  0110-1.vcxproj -> C:\Users\User\source\repos\0110-1\Debug\0110-1.exe
