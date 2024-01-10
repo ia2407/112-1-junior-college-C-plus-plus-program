@@ -1,0 +1,5 @@
+﻿  ConsoleApplication5.cpp
+C:\Users\User\source\repos\ConsoleApplication5\ConsoleApplication5\ConsoleApplication5.cpp(25,17): warning C4477: 'scanf_s' : 格式字串 '%s' 需要 'char *' 類型的引數，但 variadic 引數 1 的類型為 'const char *'
+C:\Users\User\source\repos\ConsoleApplication5\ConsoleApplication5\ConsoleApplication5.cpp(25,17): message : 此引數可用為轉換規範
+C:\Users\User\source\repos\ConsoleApplication5\ConsoleApplication5\ConsoleApplication5.cpp(18,9): warning C4101: 'studentGrade': 未參考的區域變數
+  ConsoleApplication5.vcxproj -> C:\Users\User\source\repos\ConsoleApplication5\Debug\ConsoleApplication5.exe
