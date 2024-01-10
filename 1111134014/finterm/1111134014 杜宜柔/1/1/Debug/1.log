@@ -1,0 +1,4 @@
+﻿  1.cpp
+C:\Users\User\source\repos\1\1\1.cpp(66,56): error C2664: 'void swap(int *,int *)': 無法將引數 1 從 'char (*)[20]' 轉換為 'int *'
+C:\Users\User\source\repos\1\1\1.cpp(66,22): message : 指向的類型沒有相關; 轉換必須有 reinterpret_cast、C-Style 轉換或函式樣式轉換
+C:\Users\User\source\repos\1\1\1.cpp(11,6): message : 請參閱 'swap' 的宣告
