@@ -1,0 +1,8 @@
+﻿  1111051098 林江翰.cpp
+C:\Users\User\Desktop\1111051098 林江翰\1111051098 林江翰\1111051098 林江翰.cpp(32,68): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+C:\Users\User\Desktop\1111051098 林江翰\1111051098 林江翰\1111051098 林江翰.cpp(67,31): error C2332: 'struct': 遺漏標記名稱
+C:\Users\User\Desktop\1111051098 林江翰\1111051098 林江翰\1111051098 林江翰.cpp(67,30): error C2226: 語法錯誤: 未預期的類型 'bubble::<unnamed-tag>'
+C:\Users\User\Desktop\1111051098 林江翰\1111051098 林江翰\1111051098 林江翰.cpp(69,37): error C2679: 二元運算子 '=': 找不到使用右方運算元類型 'bubble::stu *' 的運算子 (或是沒有可接受的轉換)
+C:\Users\User\Desktop\1111051098 林江翰\1111051098 林江翰\1111051098 林江翰.cpp(11,1): message : 可能是 'stu &stu::operator =(stu &&)'
+C:\Users\User\Desktop\1111051098 林江翰\1111051098 林江翰\1111051098 林江翰.cpp(11,1): message : 或       'stu &stu::operator =(const stu &)'
+C:\Users\User\Desktop\1111051098 林江翰\1111051098 林江翰\1111051098 林江翰.cpp(69,37): message : 當嘗試符合引數清單 '(stu, bubble::stu *)' 時
