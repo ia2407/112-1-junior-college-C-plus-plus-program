@@ -1,0 +1,4 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\User\Desktop\1111134039洪啟軒.c\1111134039洪啟軒.c01\ConsoleApplication1\ConsoleApplication1.cpp(31,65): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+C:\Users\User\Desktop\1111134039洪啟軒.c\1111134039洪啟軒.c01\ConsoleApplication1\ConsoleApplication1.cpp(38,16): warning C4477: 'printf' : 格式字串 '%5d' 需要 'int' 類型的引數，但 variadic 引數 5 的類型為 'double'
+C:\Users\User\Desktop\1111134039洪啟軒.c\1111134039洪啟軒.c01\ConsoleApplication1\ConsoleApplication1.cpp(64,11): error C2040: 'temp': 'char *' 和 'stu' 的間接取值層級不同
