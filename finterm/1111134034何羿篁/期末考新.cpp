@@ -38,7 +38,7 @@ int main(void)
     printf("%10s  %5s %5s %5s %5s\n", "Name", "ID", "Math", "Compu", "Avg");
 
     for (i = 0; i < SIZE; ++i) {
-        printf("%10s  %5d %5d %5d %5f", myStu[i].name, myStu[i].ID, myStu[i].math, myStu[i].compu, myStu[i].avg);
+        printf("%10s  %5d %5d %5d %5f", name[i], myStu[i].ID, myStu[i].math, myStu[i].compu, myStu[i].avg);
         printf("\n");
     }
     printf("\n");
@@ -49,7 +49,7 @@ int main(void)
     printf("%10s  %5s %5s %5s %5s\n", "Name", "ID", "Math", "Compu", "Avg");
 
     for (i = 0; i < SIZE; ++i) {
-        printf("%10s  %5d %5d %5d %5f", myStu[i].name, myStu[i].ID, myStu[i].math, myStu[i].compu, myStu[i].avg);
+        printf("%10s  %5d %5d %5d %5f", name[i], myStu[i].ID, myStu[i].math, myStu[i].compu, myStu[i].avg);
         printf("\n");
     }
     puts("");
