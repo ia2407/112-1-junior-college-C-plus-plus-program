@@ -1,27 +1,78 @@
-﻿                                 // ConsoleApplication1.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
+﻿// ConsoleApplication1.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
 //
 
-#include <iostream>
-
-int fact(int x)
+#include <stdio.h>
+#include <string.h>
+#define SIZE 2
+#define EXAM 4 
+typedef struct
 {
-    int count = 1;
-    int resule = 1; \
-        for (count = 1; count <= x; count++)
-        {
-            resule = resule * count;
+    char name[20];
+    int ID, math, compu;
+    float avg;
+}student;
+// function main begins program execution
+void bubble(student myStu[SIZE]);
+
+int main(void)
+{
+    int i;
+    char inputname[20];
+
+    student myStu[SIZE], tempStu;  //結構宣告
+
+    for (i = 0; i < SIZE; ++i)
+    {
+        printf("請輸入第%d比學生資料\n", i + 1);
+        printf("請輸入學生姓名");
+        scanf_s("%s", inputname, 20);
+        strcpy_s(myStu[i].name, inputname);
+        printf("請輸入學生學號");
+        scanf_s("%d", &myStu[i].ID);
+        printf("請輸入數學成績");
+        scanf_s("%d", &myStu[i].math);
+        printf("請輸入計概成績");
+        scanf_s("%d", &myStu[i].compu);
+        myStu[i].avg = ((float)myStu[i].math + myStu[i].compu) / 2;
+    }
+
+    printf("%10s  %5s %5s %5s %5s\n", "Name", "ID", "Math", "Compu", "Avg");
+
+    for (i = 0; i < SIZE; ++i) {    //印出結構內容
+        printf("%10s  %5d %5d %5d %5f", myStu[i].name, myStu[i].ID, myStu[i].math, myStu[i].compu, myStu[i].avg);
+        printf("\n");
+    }
+    printf("\n");
+
+    bubble(myStu);
+
+    puts("\nData items in ascending order");
+    printf("%10s  %5s %5s %5s %5s\n", "Name", "ID", "Math", "Compu", "Avg");
+
+    for (i = 0; i < SIZE; ++i) {
+        printf("%10s  %5d %5d %5d %5f", myStu[i].name, myStu[i].ID, myStu[i].math, myStu[i].compu, myStu[i].avg);
+        printf("\n");
+    }
+    puts("");
+}
+
+void bubble(student myStu[SIZE])
+{
+    student temp;
+    unsigned int pass, i;
+                
+    for (pass = 0; pass < SIZE; ++pass) {
+     
+        for (i = 0; i < SIZE - 1; ++i) {
+                    
+            if (myStu[i].avg < myStu[i + 1].avg) {
+                temp = myStu[i];
+                myStu[i] = myStu[i + 1];
+                myStu[i + 1] = temp;
+            }
         }
-    return resule;
+    }
 }
-int main()
-{
-    int x;
-    printf_s("請輸入值");
-    scanf_s("%d", &x);
-    fact(x);
-    printf_s("1*2*...*%d=%d",x,fact( x));
-}
-
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
 // 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
 
