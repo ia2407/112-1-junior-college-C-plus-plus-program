@@ -1,0 +1,5 @@
+﻿  1111134007黃郁婷.cpp
+C:\Users\User\Desktop\1111134007黃郁婷\1111134007黃郁婷\1111134007黃郁婷.cpp(33,67): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+C:\Users\User\Desktop\1111134007黃郁婷\1111134007黃郁婷\1111134007黃郁婷.cpp(48,66): warning C4474: 'printf': 傳遞給格式字串的引數太多
+C:\Users\User\Desktop\1111134007黃郁婷\1111134007黃郁婷\1111134007黃郁婷.cpp(48,66): message : 預留位置及其參數需要 4 個 variadic 引數，但卻提供了 5 個
+  1111134007黃郁婷.vcxproj -> C:\Users\User\Desktop\1111134007黃郁婷\Debug\1111134007黃郁婷.exe
